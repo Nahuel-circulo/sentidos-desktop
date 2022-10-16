@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.1.32328.378
+VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentidos", "Sentidos\Sentidos.csproj", "{A3B12744-5659-42C9-872B-814C4B6A91E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentidos", "Sentidos\Sentidos.csproj", "{04CCBB49-3EE1-4A45-B315-89A746DF0058}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A3B12744-5659-42C9-872B-814C4B6A91E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A3B12744-5659-42C9-872B-814C4B6A91E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A3B12744-5659-42C9-872B-814C4B6A91E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A3B12744-5659-42C9-872B-814C4B6A91E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04CCBB49-3EE1-4A45-B315-89A746DF0058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04CCBB49-3EE1-4A45-B315-89A746DF0058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04CCBB49-3EE1-4A45-B315-89A746DF0058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04CCBB49-3EE1-4A45-B315-89A746DF0058}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {24EB292C-73CB-4C68-B185-3287766F3406}
+		SolutionGuid = {03ABB322-EFE6-4C01-902B-0DA55A521C2E}
 	EndGlobalSection
 EndGlobal
