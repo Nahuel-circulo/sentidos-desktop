@@ -1,0 +1,5 @@
+*.suo
+*.[Cc]ache
+!?*.[Cc]ache/
+/.vs/Sentidos/FileContentIndex/
+/Sentidos/obj/Release/
