@@ -12,7 +12,7 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\irina\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\franc\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\irina\\.nuget\\packages"
     ],
     "configProperties": {
