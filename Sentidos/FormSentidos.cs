@@ -56,8 +56,27 @@ namespace Sentidos
         private async void TraerComida()
         {
            
-            //ListaComidas comidas =await Conexion.TraerComidas();
-            //dataGridView1.DataSource = comidas.Results;
+            ListaComidas comidas =await Conexion.TraerComidas();
+            dataGridView1.DataSource = comidas.Results;
+            dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+        }
+
+        private void btnListados_Click(object sender, EventArgs e)
+        {
+            filtroListados fp = new filtroListados();
+            traerFiltros(fp);
+        }
+
+        private void pictureBoxLogoSentidos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //boton Reservas
+        private void button1_Click(object sender, EventArgs e)
+        {
+            filtroReservas fp = new filtroReservas();
+            traerFiltros(fp);
         }
     }
 }

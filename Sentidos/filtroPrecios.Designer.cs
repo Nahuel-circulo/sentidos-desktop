@@ -34,11 +34,14 @@
             this.btnPreciosCasa_Té = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.labelListaPrecios = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewPrecios = new System.Windows.Forms.DataGridView();
+            this.Column1PlatoNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2DescripcionPlato = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.flowLayoutPanelFiltroPrecios.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPrecios)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanelFiltroPrecios
@@ -50,7 +53,6 @@
             this.flowLayoutPanelFiltroPrecios.Name = "flowLayoutPanelFiltroPrecios";
             this.flowLayoutPanelFiltroPrecios.Size = new System.Drawing.Size(967, 531);
             this.flowLayoutPanelFiltroPrecios.TabIndex = 0;
-            this.flowLayoutPanelFiltroPrecios.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanelFiltroPrecios_Paint);
             // 
             // tableLayoutPanel1
             // 
@@ -98,7 +100,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.07426F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 163F));
             this.tableLayoutPanel2.Controls.Add(this.labelListaPrecios, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.dataGridView1, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.dataGridViewPrecios, 1, 1);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 82);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
@@ -118,15 +120,37 @@
             this.labelListaPrecios.Text = "labelPreciosPorDefault";
             this.labelListaPrecios.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dataGridView1
+            // dataGridViewPrecios
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(162, 37);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(635, 362);
-            this.dataGridView1.TabIndex = 1;
+            this.dataGridViewPrecios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPrecios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1PlatoNombre,
+            this.Column2DescripcionPlato,
+            this.ColumnPrecio});
+            this.dataGridViewPrecios.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewPrecios.Location = new System.Drawing.Point(162, 37);
+            this.dataGridViewPrecios.Name = "dataGridViewPrecios";
+            this.dataGridViewPrecios.RowTemplate.Height = 25;
+            this.dataGridViewPrecios.Size = new System.Drawing.Size(635, 362);
+            this.dataGridViewPrecios.TabIndex = 1;
+            // 
+            // Column1PlatoNombre
+            // 
+            this.Column1PlatoNombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1PlatoNombre.HeaderText = "Nombre";
+            this.Column1PlatoNombre.Name = "Column1PlatoNombre";
+            // 
+            // Column2DescripcionPlato
+            // 
+            this.Column2DescripcionPlato.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2DescripcionPlato.HeaderText = "Descripción";
+            this.Column2DescripcionPlato.Name = "Column2DescripcionPlato";
+            // 
+            // ColumnPrecio
+            // 
+            this.ColumnPrecio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColumnPrecio.HeaderText = "Precio";
+            this.ColumnPrecio.Name = "ColumnPrecio";
             // 
             // filtroPrecios
             // 
@@ -139,7 +163,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPrecios)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -152,6 +176,9 @@
         private Button btnPreciosCasa_Té;
         private TableLayoutPanel tableLayoutPanel2;
         private Label labelListaPrecios;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridViewPrecios;
+        private DataGridViewTextBoxColumn Column1PlatoNombre;
+        private DataGridViewTextBoxColumn Column2DescripcionPlato;
+        private DataGridViewTextBoxColumn ColumnPrecio;
     }
 }

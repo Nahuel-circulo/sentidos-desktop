@@ -123,6 +123,7 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "Reservas";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnPedido
             // 
@@ -147,6 +148,7 @@
             this.btnListados.TabIndex = 8;
             this.btnListados.Text = "Listados";
             this.btnListados.UseVisualStyleBackColor = false;
+            this.btnListados.Click += new System.EventHandler(this.btnListados_Click);
             // 
             // btnPrecios
             // 
@@ -171,6 +173,7 @@
             this.pictureBoxLogoSentidos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxLogoSentidos.TabIndex = 15;
             this.pictureBoxLogoSentidos.TabStop = false;
+            this.pictureBoxLogoSentidos.Click += new System.EventHandler(this.pictureBoxLogoSentidos_Click);
             // 
             // pictureBoxImgUsuario
             // 

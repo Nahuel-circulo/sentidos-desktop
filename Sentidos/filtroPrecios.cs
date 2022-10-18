@@ -18,7 +18,7 @@ namespace Sentidos
             InitializeComponent();
         }
 
-        private async void btnPreciosRestaurante_Click(object sender, EventArgs e)
+        private void btnPreciosRestaurante_Click(object sender, EventArgs e)
         {
             //para que quede as lindo por ahora
             
@@ -41,6 +41,7 @@ namespace Sentidos
         private void flowLayoutPanelFiltroPrecios_Paint(object sender, PaintEventArgs e)
         {
 
+            //mostrar los precios de la casa de té correspondientes aquí
         }
         private async void traerComida(char x)
         {

@@ -41,3 +41,30 @@ C:\Users\franc\OneDrive\Desktop\Nueva carpeta\metodologia de sistemas\Escritorio
 C:\Users\franc\OneDrive\Desktop\Nueva carpeta\metodologia de sistemas\Escritorio\sentidos-desktop\Sentidos\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 C:\Users\franc\OneDrive\Desktop\Nueva carpeta\metodologia de sistemas\Escritorio\sentidos-desktop\Sentidos\bin\Debug\net6.0-windows\Newtonsoft.Json.Bson.dll
 C:\Users\franc\OneDrive\Desktop\Nueva carpeta\metodologia de sistemas\Escritorio\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.csproj.CopyComplete
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\bin\Debug\net6.0-windows\Sentidos.exe
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\bin\Debug\net6.0-windows\Sentidos.deps.json
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\bin\Debug\net6.0-windows\Sentidos.runtimeconfig.json
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\bin\Debug\net6.0-windows\Sentidos.dll
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\bin\Debug\net6.0-windows\Sentidos.pdb
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\bin\Debug\net6.0-windows\Newtonsoft.Json.Bson.dll
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.filtroPedidos.resources
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.filtroPrecios.resources
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.FormSentidos.resources
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.Properties.Resources.resources
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.csproj.CopyComplete
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.dll
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\refint\Sentidos.dll
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.pdb
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.genruntimeconfig.cache
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\ref\Sentidos.dll
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.filtroListados.resources
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.filtroReservas.resources
+C:\Users\franc\OneDrive\Desktop\Nueva carpeta\metodologia de sistemas\Escritorio\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.filtroListados.resources
+C:\Users\franc\OneDrive\Desktop\Nueva carpeta\metodologia de sistemas\Escritorio\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.filtroReservas.resources
