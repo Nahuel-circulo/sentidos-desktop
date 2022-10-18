@@ -20,6 +20,10 @@
             base.Dispose(disposing);
         }
 
+
+
+
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -40,6 +44,7 @@
             this.pictureBoxImgUsuario = new System.Windows.Forms.PictureBox();
             this.btnIngresos = new System.Windows.Forms.Button();
             this.panelFiltros = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.linkLabelDevStation = new System.Windows.Forms.LinkLabel();
             this.labelDesarrolladoPor = new System.Windows.Forms.Label();
@@ -49,6 +54,8 @@
             this.tableLayoutPanel_menuSentidos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogoSentidos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImgUsuario)).BeginInit();
+            this.panelFiltros.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -116,6 +123,7 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "Reservas";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnPedido
             // 
@@ -140,6 +148,7 @@
             this.btnListados.TabIndex = 8;
             this.btnListados.Text = "Listados";
             this.btnListados.UseVisualStyleBackColor = false;
+            this.btnListados.Click += new System.EventHandler(this.btnListados_Click);
             // 
             // btnPrecios
             // 
@@ -164,6 +173,7 @@
             this.pictureBoxLogoSentidos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxLogoSentidos.TabIndex = 15;
             this.pictureBoxLogoSentidos.TabStop = false;
+            this.pictureBoxLogoSentidos.Click += new System.EventHandler(this.pictureBoxLogoSentidos_Click);
             // 
             // pictureBoxImgUsuario
             // 
@@ -192,10 +202,20 @@
             // 
             // panelFiltros
             // 
+            this.panelFiltros.Controls.Add(this.dataGridView1);
             this.panelFiltros.Location = new System.Drawing.Point(3, 71);
             this.panelFiltros.Name = "panelFiltros";
             this.panelFiltros.Size = new System.Drawing.Size(953, 510);
             this.panelFiltros.TabIndex = 1;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(950, 507);
+            this.dataGridView1.TabIndex = 0;
             // 
             // tableLayoutPanel1
             // 
@@ -270,6 +290,8 @@
             this.tableLayoutPanel_menuSentidos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogoSentidos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImgUsuario)).EndInit();
+            this.panelFiltros.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -295,5 +317,6 @@
         private TableLayoutPanel tableLayoutPanel1;
         private LinkLabel linkLabelDevStation;
         private Label labelDesarrolladoPor;
+        private DataGridView dataGridView1;
     }
 }

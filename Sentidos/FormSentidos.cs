@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sentidos.Coneccion;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace Sentidos
         public FormSentidos()
         {
             InitializeComponent();
+            TraerComida();
         }
 
         private void flowLayoutPanelSentidos_Paint(object sender, PaintEventArgs e)
@@ -49,6 +51,32 @@ namespace Sentidos
         {
             linkLabelDevStation.LinkVisited = true; 
             // marca error: System.Diagnostics.Process.Start("https://devstation213396337.wordpress.com/");
+        }
+
+        private async void TraerComida()
+        {
+           
+            ListaComidas comidas =await Conexion.TraerComidas();
+            dataGridView1.DataSource = comidas.Results;
+            dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+        }
+
+        private void btnListados_Click(object sender, EventArgs e)
+        {
+            filtroListados fp = new filtroListados();
+            traerFiltros(fp);
+        }
+
+        private void pictureBoxLogoSentidos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //boton Reservas
+        private void button1_Click(object sender, EventArgs e)
+        {
+            filtroReservas fp = new filtroReservas();
+            traerFiltros(fp);
         }
     }
 }

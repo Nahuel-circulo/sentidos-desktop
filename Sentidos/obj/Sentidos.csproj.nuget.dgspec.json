@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\irina\\source\\repos\\Sentidos\\Sentidos\\Sentidos.csproj": {}
+    "C:\\Users\\ASUS\\Desktop\\sentidos\\sentidos-desktop\\Sentidos\\Sentidos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\irina\\source\\repos\\Sentidos\\Sentidos\\Sentidos.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\sentidos\\sentidos-desktop\\Sentidos\\Sentidos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\irina\\source\\repos\\Sentidos\\Sentidos\\Sentidos.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\sentidos\\sentidos-desktop\\Sentidos\\Sentidos.csproj",
         "projectName": "Sentidos",
-        "projectPath": "C:\\Users\\irina\\source\\repos\\Sentidos\\Sentidos\\Sentidos.csproj",
-        "packagesPath": "C:\\Users\\irina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\irina\\source\\repos\\Sentidos\\Sentidos\\obj\\",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\sentidos\\sentidos-desktop\\Sentidos\\Sentidos.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\sentidos\\sentidos-desktop\\Sentidos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\irina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Newtonsoft.Json.Bson": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -57,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
