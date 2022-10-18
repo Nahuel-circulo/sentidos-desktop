@@ -10,6 +10,9 @@
     <Compile Update="filtroPrecios.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="filtroReservas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="FormSentidos.cs">
       <SubType>Form</SubType>
     </Compile>
