@@ -59,7 +59,6 @@ namespace Sentidos.Coneccion
             
             if (response.IsSuccessStatusCode)
             {
-                Debug.Write("HOLA");
                 var a = response.Content.ReadAsStringAsync().Result;
                
                 listaComidas = JsonConvert.DeserializeObject<ListaComidas>(a);
@@ -69,6 +68,33 @@ namespace Sentidos.Coneccion
             
             return listaComidas;
         }
+        public static void enviarRecerva(Reserva r)
+        {
+            HttpClient Client = new HttpClient();
+            Client.BaseAddress = new Uri(url);
+            StringContent stringContent = new StringContent(JsonConvert.SerializeObject(r));
+            var hola= Client.PostAsync("/api/reservation/",stringContent);
+            Debug.Write(hola.IsFaulted);
+            Debug.Write("hola");
+        }
+        public async static Task<ListaUsuarios> traerUsuarios()
+        {
+            ListaUsuarios listaUsuarios= null;
+            HttpClient Client = new HttpClient();
+            Client.BaseAddress = new Uri(url);
+            HttpResponseMessage response = await Client.GetAsync("api/users");
+            if (response.IsSuccessStatusCode)
+            {
+               
+                var a = response.Content.ReadAsStringAsync().Result;
+
+                listaUsuarios = JsonConvert.DeserializeObject<ListaUsuarios>(a);
+
+
+            }
+            return listaUsuarios;
+        }
+
       
     }
 }

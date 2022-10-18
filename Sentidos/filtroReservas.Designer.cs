@@ -49,11 +49,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.labelHorarioReserva = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.labelHoraPuntos = new System.Windows.Forms.Label();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.labelHorarioReserva = new System.Windows.Forms.Label();
+            this.labelHoraPuntos = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tlpCamarero_mesa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNumero_mesa)).BeginInit();
@@ -63,8 +63,8 @@
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
             // tlpCamarero_mesa
@@ -277,6 +277,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Aceptar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tableLayoutPanel5
             // 
@@ -339,37 +340,15 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(964, 84);
             this.tableLayoutPanel6.TabIndex = 4;
             // 
-            // labelHorarioReserva
+            // label4
             // 
-            this.labelHorarioReserva.AutoSize = true;
-            this.labelHorarioReserva.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelHorarioReserva.Location = new System.Drawing.Point(3, 0);
-            this.labelHorarioReserva.Name = "labelHorarioReserva";
-            this.labelHorarioReserva.Size = new System.Drawing.Size(158, 84);
-            this.labelHorarioReserva.TabIndex = 1;
-            this.labelHorarioReserva.Text = "Horario:";
-            this.labelHorarioReserva.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown2.Location = new System.Drawing.Point(167, 58);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(41, 23);
-            this.numericUpDown2.TabIndex = 4;
-            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // labelHoraPuntos
-            // 
-            this.labelHoraPuntos.AutoSize = true;
-            this.labelHoraPuntos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelHoraPuntos.Location = new System.Drawing.Point(214, 0);
-            this.labelHoraPuntos.Name = "labelHoraPuntos";
-            this.labelHoraPuntos.Size = new System.Drawing.Size(15, 84);
-            this.labelHoraPuntos.TabIndex = 5;
-            this.labelHoraPuntos.Text = ":";
-            this.labelHoraPuntos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Location = new System.Drawing.Point(279, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(11, 84);
+            this.label4.TabIndex = 7;
+            this.label4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // numericUpDown3
             // 
@@ -381,15 +360,37 @@
             this.numericUpDown3.TabIndex = 6;
             this.numericUpDown3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label4
+            // numericUpDown2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(279, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(11, 84);
-            this.label4.TabIndex = 7;
-            this.label4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.numericUpDown2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.numericUpDown2.Location = new System.Drawing.Point(167, 58);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(41, 23);
+            this.numericUpDown2.TabIndex = 4;
+            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // labelHorarioReserva
+            // 
+            this.labelHorarioReserva.AutoSize = true;
+            this.labelHorarioReserva.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelHorarioReserva.Location = new System.Drawing.Point(3, 0);
+            this.labelHorarioReserva.Name = "labelHorarioReserva";
+            this.labelHorarioReserva.Size = new System.Drawing.Size(158, 84);
+            this.labelHorarioReserva.TabIndex = 1;
+            this.labelHorarioReserva.Text = "Horario:";
+            this.labelHorarioReserva.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            // 
+            // labelHoraPuntos
+            // 
+            this.labelHoraPuntos.AutoSize = true;
+            this.labelHoraPuntos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelHoraPuntos.Location = new System.Drawing.Point(214, 0);
+            this.labelHoraPuntos.Name = "labelHoraPuntos";
+            this.labelHoraPuntos.Size = new System.Drawing.Size(15, 84);
+            this.labelHoraPuntos.TabIndex = 5;
+            this.labelHoraPuntos.Text = ":";
+            this.labelHoraPuntos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // comboBox1
             // 
@@ -427,8 +428,8 @@
             this.tableLayoutPanel5.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
 
         }

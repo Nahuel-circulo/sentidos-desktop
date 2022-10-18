@@ -46,8 +46,8 @@ namespace Sentidos
         private async void traerComida(char x)
         {
             ListaComidas listaComidas = await Conexion.TraerComidas(x);
-            dataGridView1.DataSource = listaComidas.Results;
-            dataGridView1.Refresh();
+            dataGridViewPrecios.DataSource = listaComidas.Results;
+            dataGridViewPrecios.Refresh();
         }
     }
 }

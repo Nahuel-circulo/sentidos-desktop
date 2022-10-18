@@ -56,9 +56,9 @@ namespace Sentidos
         private async void TraerComida()
         {
            
-            ListaComidas comidas =await Conexion.TraerComidas();
-            dataGridView1.DataSource = comidas.Results;
-            dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            //ListaComidas comidas =await Conexion.TraerComidas();
+            //dataGridView1.DataSource = comidas.Results;
+            //dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void btnListados_Click(object sender, EventArgs e)
