@@ -66,3 +66,4 @@ C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-window
 C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\ref\Sentidos.dll
 C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.filtroListados.resources
 C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.filtroReservas.resources
+C:\Users\ASUS\Desktop\sentidos\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.LogIn.resources

@@ -30,7 +30,7 @@
         {
             this.tlpCamarero_mesa = new System.Windows.Forms.TableLayoutPanel();
             this.labelNombreReserva = new System.Windows.Forms.Label();
-            this.textBoxCamarero = new System.Windows.Forms.TextBox();
+            this.textBoxNombreComensal = new System.Windows.Forms.TextBox();
             this.labelNumero_mesa = new System.Windows.Forms.Label();
             this.numericUpDownNumero_mesa = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -39,8 +39,8 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.labelFechaReservas = new System.Windows.Forms.Label();
             this.labelCant_Comensales = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.numericUpDownCant_Comensales = new System.Windows.Forms.NumericUpDown();
+            this.dateTimePickerFecha = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.btnAceptarPedido = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
@@ -49,22 +49,22 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.labelHorarioReserva = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.labelHoraPuntos = new System.Windows.Forms.Label();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.numericUpDownMinuto = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownHora = new System.Windows.Forms.NumericUpDown();
+            this.labelHorarioReserva = new System.Windows.Forms.Label();
+            this.labelHoraPuntos = new System.Windows.Forms.Label();
+            this.comboBoxAmPm = new System.Windows.Forms.ComboBox();
             this.tlpCamarero_mesa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNumero_mesa)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCant_Comensales)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinuto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHora)).BeginInit();
             this.SuspendLayout();
             // 
             // tlpCamarero_mesa
@@ -76,7 +76,7 @@
             this.tlpCamarero_mesa.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
             this.tlpCamarero_mesa.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 192F));
             this.tlpCamarero_mesa.Controls.Add(this.labelNombreReserva, 0, 0);
-            this.tlpCamarero_mesa.Controls.Add(this.textBoxCamarero, 1, 0);
+            this.tlpCamarero_mesa.Controls.Add(this.textBoxNombreComensal, 1, 0);
             this.tlpCamarero_mesa.Controls.Add(this.labelNumero_mesa, 2, 0);
             this.tlpCamarero_mesa.Controls.Add(this.numericUpDownNumero_mesa, 3, 0);
             this.tlpCamarero_mesa.Location = new System.Drawing.Point(0, 3);
@@ -97,16 +97,16 @@
             this.labelNombreReserva.Text = "A nombre de:";
             this.labelNombreReserva.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
-            // textBoxCamarero
+            // textBoxNombreComensal
             // 
-            this.textBoxCamarero.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.textBoxNombreComensal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxCamarero.Location = new System.Drawing.Point(166, 58);
-            this.textBoxCamarero.Name = "textBoxCamarero";
-            this.textBoxCamarero.Size = new System.Drawing.Size(281, 23);
-            this.textBoxCamarero.TabIndex = 0;
-            this.textBoxCamarero.Text = "Introduzca su nombre";
-            this.textBoxCamarero.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxNombreComensal.Location = new System.Drawing.Point(166, 58);
+            this.textBoxNombreComensal.Name = "textBoxNombreComensal";
+            this.textBoxNombreComensal.Size = new System.Drawing.Size(281, 23);
+            this.textBoxNombreComensal.TabIndex = 0;
+            this.textBoxNombreComensal.Text = "Nombre del comenzal";
+            this.textBoxNombreComensal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelNumero_mesa
             // 
@@ -177,8 +177,8 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 192F));
             this.tableLayoutPanel2.Controls.Add(this.labelFechaReservas, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.labelCant_Comensales, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.numericUpDown1, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.dateTimePicker1, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.numericUpDownCant_Comensales, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.dateTimePickerFecha, 1, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 116);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
@@ -208,24 +208,24 @@
             this.labelCant_Comensales.Text = "Cantidad de comensales:";
             this.labelCant_Comensales.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
-            // numericUpDown1
+            // numericUpDownCant_Comensales
             // 
-            this.numericUpDown1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.numericUpDownCant_Comensales.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown1.Location = new System.Drawing.Point(649, 58);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(119, 23);
-            this.numericUpDown1.TabIndex = 3;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDownCant_Comensales.Location = new System.Drawing.Point(649, 58);
+            this.numericUpDownCant_Comensales.Name = "numericUpDownCant_Comensales";
+            this.numericUpDownCant_Comensales.Size = new System.Drawing.Size(119, 23);
+            this.numericUpDownCant_Comensales.TabIndex = 3;
+            this.numericUpDownCant_Comensales.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // dateTimePicker1
+            // dateTimePickerFecha
             // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.dateTimePickerFecha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(166, 58);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(281, 23);
-            this.dateTimePicker1.TabIndex = 4;
+            this.dateTimePickerFecha.Location = new System.Drawing.Point(166, 58);
+            this.dateTimePickerFecha.Name = "dateTimePickerFecha";
+            this.dateTimePickerFecha.Size = new System.Drawing.Size(281, 23);
+            this.dateTimePickerFecha.TabIndex = 4;
             // 
             // tableLayoutPanel3
             // 
@@ -327,17 +327,47 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 161F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 509F));
             this.tableLayoutPanel6.Controls.Add(this.label4, 4, 0);
-            this.tableLayoutPanel6.Controls.Add(this.numericUpDown3, 3, 0);
-            this.tableLayoutPanel6.Controls.Add(this.numericUpDown2, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.numericUpDownMinuto, 3, 0);
+            this.tableLayoutPanel6.Controls.Add(this.numericUpDownHora, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.labelHorarioReserva, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.labelHoraPuntos, 2, 0);
-            this.tableLayoutPanel6.Controls.Add(this.comboBox1, 5, 0);
+            this.tableLayoutPanel6.Controls.Add(this.comboBoxAmPm, 5, 0);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(-1, 224);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(964, 84);
             this.tableLayoutPanel6.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Location = new System.Drawing.Point(279, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(11, 84);
+            this.label4.TabIndex = 7;
+            this.label4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // numericUpDownMinuto
+            // 
+            this.numericUpDownMinuto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.numericUpDownMinuto.Location = new System.Drawing.Point(235, 58);
+            this.numericUpDownMinuto.Name = "numericUpDownMinuto";
+            this.numericUpDownMinuto.Size = new System.Drawing.Size(38, 23);
+            this.numericUpDownMinuto.TabIndex = 6;
+            this.numericUpDownMinuto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // numericUpDownHora
+            // 
+            this.numericUpDownHora.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.numericUpDownHora.Location = new System.Drawing.Point(167, 58);
+            this.numericUpDownHora.Name = "numericUpDownHora";
+            this.numericUpDownHora.Size = new System.Drawing.Size(41, 23);
+            this.numericUpDownHora.TabIndex = 4;
+            this.numericUpDownHora.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelHorarioReserva
             // 
@@ -350,16 +380,6 @@
             this.labelHorarioReserva.Text = "Horario:";
             this.labelHorarioReserva.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown2.Location = new System.Drawing.Point(167, 58);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(41, 23);
-            this.numericUpDown2.TabIndex = 4;
-            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // labelHoraPuntos
             // 
             this.labelHoraPuntos.AutoSize = true;
@@ -371,38 +391,18 @@
             this.labelHoraPuntos.Text = ":";
             this.labelHoraPuntos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // numericUpDown3
+            // comboBoxAmPm
             // 
-            this.numericUpDown3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.comboBoxAmPm.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown3.Location = new System.Drawing.Point(235, 58);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(38, 23);
-            this.numericUpDown3.TabIndex = 6;
-            this.numericUpDown3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(279, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(11, 84);
-            this.label4.TabIndex = 7;
-            this.label4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "am",
-            "pm"});
-            this.comboBox1.Location = new System.Drawing.Point(296, 58);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(155, 23);
-            this.comboBox1.TabIndex = 8;
+            this.comboBoxAmPm.FormattingEnabled = true;
+            this.comboBoxAmPm.Items.AddRange(new object[] {
+            "a.m",
+            "p.m"});
+            this.comboBoxAmPm.Location = new System.Drawing.Point(296, 58);
+            this.comboBoxAmPm.Name = "comboBoxAmPm";
+            this.comboBoxAmPm.Size = new System.Drawing.Size(155, 23);
+            this.comboBoxAmPm.TabIndex = 8;
             // 
             // filtroReservas
             // 
@@ -421,14 +421,14 @@
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCant_Comensales)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinuto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHora)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -437,7 +437,7 @@
 
         private TableLayoutPanel tlpCamarero_mesa;
         private Label labelNombreReserva;
-        private TextBox textBoxCamarero;
+        private TextBox textBoxNombreComensal;
         private Label labelNumero_mesa;
         private NumericUpDown numericUpDownNumero_mesa;
         private TableLayoutPanel tableLayoutPanel1;
@@ -446,21 +446,21 @@
         private TableLayoutPanel tableLayoutPanel2;
         private Label labelFechaReservas;
         private Label labelCant_Comensales;
-        private NumericUpDown numericUpDown1;
+        private NumericUpDown numericUpDownCant_Comensales;
         private TableLayoutPanel tableLayoutPanel3;
         private Button btnAceptarPedido;
         private TableLayoutPanel tableLayoutPanel4;
         private Button button1;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dateTimePickerFecha;
         private TableLayoutPanel tableLayoutPanel5;
         private Label label2;
         private Label label3;
         private TableLayoutPanel tableLayoutPanel6;
         private Label labelHorarioReserva;
         private Label label4;
-        private NumericUpDown numericUpDown3;
-        private NumericUpDown numericUpDown2;
+        private NumericUpDown numericUpDownMinuto;
+        private NumericUpDown numericUpDownHora;
         private Label labelHoraPuntos;
-        private ComboBox comboBox1;
+        private ComboBox comboBoxAmPm;
     }
 }

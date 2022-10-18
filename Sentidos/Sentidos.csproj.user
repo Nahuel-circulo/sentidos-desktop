@@ -16,5 +16,8 @@
     <Compile Update="FormSentidos.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
