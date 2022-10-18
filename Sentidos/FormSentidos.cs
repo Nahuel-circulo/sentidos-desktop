@@ -69,13 +69,19 @@ namespace Sentidos
 
         private void pictureBoxLogoSentidos_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         //boton Reservas
         private void button1_Click(object sender, EventArgs e)
         {
             filtroReservas fp = new filtroReservas();
+            traerFiltros(fp);
+        }
+
+        private void buttonGenerarFactura_Click(object sender, EventArgs e)
+        {
+            filtroFactura fp = new filtroFactura();
             traerFiltros(fp);
         }
     }
