@@ -13,6 +13,7 @@ using System.Text.Json.Serialization;
 using System;
 using Newtonsoft.Json;
 using System.Text.Json.Nodes;
+using System.Diagnostics;
 
 namespace Sentidos.Coneccion
 {
@@ -47,24 +48,25 @@ namespace Sentidos.Coneccion
             return Mesa;
         }
 
-        public static async Task<ListaComidas> TraerComidas()
+        public static async Task<ListaComidas> TraerComidas(char x)
         {
-
+            //Debug.Write("HOLA");
 
             ListaComidas listaComidas= null;
             HttpClient Client = new HttpClient();
             Client.BaseAddress = new Uri(url);
-            HttpResponseMessage response = await Client.GetAsync("/api/food/");
+            HttpResponseMessage response = await Client.GetAsync("api/food?category="+x);
+            
             if (response.IsSuccessStatusCode)
             {
-
+                Debug.Write("HOLA");
                 var a = response.Content.ReadAsStringAsync().Result;
                
                 listaComidas = JsonConvert.DeserializeObject<ListaComidas>(a);
 
 
             }
-
+            
             return listaComidas;
         }
       

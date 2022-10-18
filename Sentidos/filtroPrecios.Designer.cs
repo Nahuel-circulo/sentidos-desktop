@@ -34,10 +34,11 @@
             this.btnPreciosCasa_Té = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.labelListaPrecios = new System.Windows.Forms.Label();
-            this.listViewPrecios = new System.Windows.Forms.ListView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanelFiltroPrecios.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanelFiltroPrecios
@@ -49,6 +50,7 @@
             this.flowLayoutPanelFiltroPrecios.Name = "flowLayoutPanelFiltroPrecios";
             this.flowLayoutPanelFiltroPrecios.Size = new System.Drawing.Size(967, 531);
             this.flowLayoutPanelFiltroPrecios.TabIndex = 0;
+            this.flowLayoutPanelFiltroPrecios.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanelFiltroPrecios_Paint);
             // 
             // tableLayoutPanel1
             // 
@@ -96,7 +98,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.07426F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 163F));
             this.tableLayoutPanel2.Controls.Add(this.labelListaPrecios, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.listViewPrecios, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.dataGridView1, 1, 1);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 82);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
@@ -116,16 +118,15 @@
             this.labelListaPrecios.Text = "labelPreciosPorDefault";
             this.labelListaPrecios.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // listViewPrecios
+            // dataGridView1
             // 
-            this.listViewPrecios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listViewPrecios.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.listViewPrecios.Location = new System.Drawing.Point(162, 37);
-            this.listViewPrecios.Name = "listViewPrecios";
-            this.listViewPrecios.Size = new System.Drawing.Size(635, 362);
-            this.listViewPrecios.TabIndex = 1;
-            this.listViewPrecios.UseCompatibleStateImageBehavior = false;
-            this.listViewPrecios.View = System.Windows.Forms.View.List;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(162, 37);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(635, 362);
+            this.dataGridView1.TabIndex = 1;
             // 
             // filtroPrecios
             // 
@@ -138,6 +139,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -150,6 +152,6 @@
         private Button btnPreciosCasa_Té;
         private TableLayoutPanel tableLayoutPanel2;
         private Label labelListaPrecios;
-        private ListView listViewPrecios;
+        private DataGridView dataGridView1;
     }
 }

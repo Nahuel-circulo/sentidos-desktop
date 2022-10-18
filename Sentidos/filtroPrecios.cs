@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sentidos.Coneccion;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,23 +18,35 @@ namespace Sentidos
             InitializeComponent();
         }
 
-        private void btnPreciosRestaurante_Click(object sender, EventArgs e)
+        private async void btnPreciosRestaurante_Click(object sender, EventArgs e)
         {
             //para que quede as lindo por ahora
-            listViewPrecios.Items.Clear();
+            
 
             labelListaPrecios.Text = "Lista de precios del restaurante:";
-            listViewPrecios.Items.Add("Se mostrará la lista de precios del Restaurante desde la base de datos.");
+            traerComida('f'); 
         }
 
-        private void btnPreciosCasa_Té_Click(object sender, EventArgs e)
+        private async void btnPreciosCasa_Té_Click(object sender, EventArgs e)
         {
             //para que quede as lindo por ahora
-            listViewPrecios.Items.Clear();
+           
 
             labelListaPrecios.Text = "Lista de precios de la Casa de Té:";
-            listViewPrecios.Items.Add("Se mostrará la lista de precios de la Casa de Té desde la base de datos.");
+            traerComida('t');
 
+
+        }
+
+        private void flowLayoutPanelFiltroPrecios_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private async void traerComida(char x)
+        {
+            ListaComidas listaComidas = await Conexion.TraerComidas(x);
+            dataGridView1.DataSource = listaComidas.Results;
+            dataGridView1.Refresh();
         }
     }
 }

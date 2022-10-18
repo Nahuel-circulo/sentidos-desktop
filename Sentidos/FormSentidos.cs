@@ -56,8 +56,8 @@ namespace Sentidos
         private async void TraerComida()
         {
            
-            ListaComidas comidas =await Conexion.TraerComidas();
-            dataGridView1.DataSource = comidas.Results;
+            //ListaComidas comidas =await Conexion.TraerComidas();
+            //dataGridView1.DataSource = comidas.Results;
         }
     }
 }
