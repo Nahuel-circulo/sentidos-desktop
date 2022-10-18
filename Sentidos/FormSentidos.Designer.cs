@@ -147,6 +147,7 @@
             this.btnListados.TabIndex = 8;
             this.btnListados.Text = "Listados";
             this.btnListados.UseVisualStyleBackColor = false;
+            this.btnListados.Click += new System.EventHandler(this.btnListados_Click);
             // 
             // btnPrecios
             // 

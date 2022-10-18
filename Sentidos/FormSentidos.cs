@@ -59,5 +59,11 @@ namespace Sentidos
             ListaComidas comidas =await Conexion.TraerComidas();
             dataGridView1.DataSource = comidas.Results;
         }
+
+        private void btnListados_Click(object sender, EventArgs e)
+        {
+            filtroListados fp = new filtroListados();
+            traerFiltros(fp);
+        }
     }
 }

@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "UD8oQDmHXTOVZMN/Uy1UFpkpuQo0VUr0AVF2Q5mM6gmbhs7qjHb4t3L2E4MGxcU0XvjgNZcwIETf30PNIZtoqg==",
+  "dgSpecHash": "FT4qeOukmLUSxH1gJkhtyRHLQvRCnTEba/dLpMDei09k5Tt0uZA+ksvm4K8OAp0msmq3IHAY6RXCVlnBJ5YEiw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\franc\\OneDrive\\Desktop\\Nueva carpeta\\metodologia de sistemas\\Escritorio\\sentidos-desktop\\Sentidos\\Sentidos.csproj",
+  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\sentidos\\sentidos-desktop\\Sentidos\\Sentidos.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\franc\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
-    "C:\\Users\\franc\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+    "C:\\Users\\ASUS\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
   ],
   "logs": []
 }
