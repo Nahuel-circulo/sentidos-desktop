@@ -201,6 +201,8 @@
             // btnAceptarPedido
             // 
             this.btnAceptarPedido.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAceptarPedido.FlatAppearance.BorderSize = 0;
+            this.btnAceptarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptarPedido.Location = new System.Drawing.Point(696, 17);
             this.btnAceptarPedido.Name = "btnAceptarPedido";
             this.btnAceptarPedido.Size = new System.Drawing.Size(155, 48);

@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanelListados = new System.Windows.Forms.TableLayoutPanel();
-            this.labelPedidos = new System.Windows.Forms.Label();
+            this.labelFacturas = new System.Windows.Forms.Label();
             this.dataGridViewPedidosDefault = new System.Windows.Forms.DataGridView();
+            this.ColumnNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnMesa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanellistadosTop = new System.Windows.Forms.TableLayoutPanel();
             this.btnListadoClientes = new System.Windows.Forms.Button();
             this.btnListadoMesasReservadas = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.buttonGenerarFactura = new System.Windows.Forms.Button();
-            this.ColumnNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnMesa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanelListados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidosDefault)).BeginInit();
             this.tableLayoutPanellistadosTop.SuspendLayout();
@@ -50,7 +50,7 @@
             this.tableLayoutPanelListados.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.92574F));
             this.tableLayoutPanelListados.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.07426F));
             this.tableLayoutPanelListados.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 163F));
-            this.tableLayoutPanelListados.Controls.Add(this.labelPedidos, 1, 0);
+            this.tableLayoutPanelListados.Controls.Add(this.labelFacturas, 1, 0);
             this.tableLayoutPanelListados.Controls.Add(this.dataGridViewPedidosDefault, 1, 1);
             this.tableLayoutPanelListados.Location = new System.Drawing.Point(1, 3);
             this.tableLayoutPanelListados.Name = "tableLayoutPanelListados";
@@ -60,16 +60,16 @@
             this.tableLayoutPanelListados.Size = new System.Drawing.Size(964, 402);
             this.tableLayoutPanelListados.TabIndex = 3;
             // 
-            // labelPedidos
+            // labelFacturas
             // 
-            this.labelPedidos.AutoSize = true;
-            this.labelPedidos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelPedidos.Location = new System.Drawing.Point(162, 0);
-            this.labelPedidos.Name = "labelPedidos";
-            this.labelPedidos.Size = new System.Drawing.Size(635, 34);
-            this.labelPedidos.TabIndex = 0;
-            this.labelPedidos.Text = "labelListadosPorDefault";
-            this.labelPedidos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelFacturas.AutoSize = true;
+            this.labelFacturas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelFacturas.Location = new System.Drawing.Point(162, 0);
+            this.labelFacturas.Name = "labelFacturas";
+            this.labelFacturas.Size = new System.Drawing.Size(635, 34);
+            this.labelFacturas.TabIndex = 0;
+            this.labelFacturas.Text = "labelListadoPedidosPorDefault";
+            this.labelFacturas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dataGridViewPedidosDefault
             // 
@@ -83,6 +83,18 @@
             this.dataGridViewPedidosDefault.RowTemplate.Height = 25;
             this.dataGridViewPedidosDefault.Size = new System.Drawing.Size(635, 362);
             this.dataGridViewPedidosDefault.TabIndex = 1;
+            // 
+            // ColumnNombre
+            // 
+            this.ColumnNombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColumnNombre.HeaderText = "Nombre";
+            this.ColumnNombre.Name = "ColumnNombre";
+            // 
+            // ColumnMesa
+            // 
+            this.ColumnMesa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColumnMesa.HeaderText = "Mesa";
+            this.ColumnMesa.Name = "ColumnMesa";
             // 
             // tableLayoutPanellistadosTop
             // 
@@ -139,24 +151,14 @@
             // buttonGenerarFactura
             // 
             this.buttonGenerarFactura.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonGenerarFactura.FlatAppearance.BorderSize = 0;
+            this.buttonGenerarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonGenerarFactura.Location = new System.Drawing.Point(613, 3);
             this.buttonGenerarFactura.Name = "buttonGenerarFactura";
             this.buttonGenerarFactura.Size = new System.Drawing.Size(182, 47);
             this.buttonGenerarFactura.TabIndex = 1;
             this.buttonGenerarFactura.Text = "Generar factura";
             this.buttonGenerarFactura.UseVisualStyleBackColor = true;
-            // 
-            // ColumnNombre
-            // 
-            this.ColumnNombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColumnNombre.HeaderText = "Nombre";
-            this.ColumnNombre.Name = "ColumnNombre";
-            // 
-            // ColumnMesa
-            // 
-            this.ColumnMesa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColumnMesa.HeaderText = "Mesa";
-            this.ColumnMesa.Name = "ColumnMesa";
             // 
             // filtroFactura
             // 
@@ -178,7 +180,7 @@
         #endregion
 
         private TableLayoutPanel tableLayoutPanelListados;
-        private Label labelPedidos;
+        private Label labelFacturas;
         private DataGridView dataGridViewPedidosDefault;
         private TableLayoutPanel tableLayoutPanellistadosTop;
         private Button btnListadoClientes;

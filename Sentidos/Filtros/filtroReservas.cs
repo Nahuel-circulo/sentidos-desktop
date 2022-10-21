@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace Sentidos
 {
-    public partial class filtroPedidos : UserControl
+    public partial class filtroReservas : UserControl
     {
-        public filtroPedidos()
+        public filtroReservas()
         {
             InitializeComponent();
+            colorBotonAceptar();
+        }
+
+
+        public void colorBotonAceptar()
+        {
+            BotonColor botonColor = new BotonColor();
+            botonColor.colorBotonGeneral(btnAceptar);
         }
     }
 }

@@ -35,14 +35,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSentidos));
             this.flowLayoutPanelSentidos = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel_menuSentidos = new System.Windows.Forms.TableLayoutPanel();
-            this.labelNombreUsuario = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnPedido = new System.Windows.Forms.Button();
             this.btnListados = new System.Windows.Forms.Button();
             this.btnPrecios = new System.Windows.Forms.Button();
-            this.pictureBoxLogoSentidos = new System.Windows.Forms.PictureBox();
-            this.pictureBoxImgUsuario = new System.Windows.Forms.PictureBox();
             this.btnIngresos = new System.Windows.Forms.Button();
+            this.pictureBoxImgUsuario = new System.Windows.Forms.PictureBox();
+            this.labelNombreUsuario = new System.Windows.Forms.Label();
+            this.buttonGenerarFactura = new System.Windows.Forms.Button();
+            this.btnSentidos = new System.Windows.Forms.Button();
             this.panelFiltros = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -50,10 +51,8 @@
             this.labelDesarrolladoPor = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonGenerarFactura = new System.Windows.Forms.Button();
             this.flowLayoutPanelSentidos.SuspendLayout();
             this.tableLayoutPanel_menuSentidos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogoSentidos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImgUsuario)).BeginInit();
             this.panelFiltros.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -63,6 +62,7 @@
             // 
             // flowLayoutPanelSentidos
             // 
+            this.flowLayoutPanelSentidos.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanelSentidos.Controls.Add(this.tableLayoutPanel_menuSentidos);
             this.flowLayoutPanelSentidos.Controls.Add(this.panelFiltros);
             this.flowLayoutPanelSentidos.Controls.Add(this.tableLayoutPanel1);
@@ -91,11 +91,11 @@
             this.tableLayoutPanel_menuSentidos.Controls.Add(this.btnPedido, 1, 0);
             this.tableLayoutPanel_menuSentidos.Controls.Add(this.btnListados, 3, 0);
             this.tableLayoutPanel_menuSentidos.Controls.Add(this.btnPrecios, 5, 0);
-            this.tableLayoutPanel_menuSentidos.Controls.Add(this.pictureBoxLogoSentidos, 0, 0);
             this.tableLayoutPanel_menuSentidos.Controls.Add(this.btnIngresos, 4, 0);
             this.tableLayoutPanel_menuSentidos.Controls.Add(this.pictureBoxImgUsuario, 8, 0);
             this.tableLayoutPanel_menuSentidos.Controls.Add(this.labelNombreUsuario, 7, 0);
             this.tableLayoutPanel_menuSentidos.Controls.Add(this.buttonGenerarFactura, 6, 0);
+            this.tableLayoutPanel_menuSentidos.Controls.Add(this.btnSentidos, 0, 0);
             this.tableLayoutPanel_menuSentidos.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel_menuSentidos.Name = "tableLayoutPanel_menuSentidos";
             this.tableLayoutPanel_menuSentidos.RowCount = 1;
@@ -103,21 +103,12 @@
             this.tableLayoutPanel_menuSentidos.Size = new System.Drawing.Size(953, 62);
             this.tableLayoutPanel_menuSentidos.TabIndex = 0;
             // 
-            // labelNombreUsuario
-            // 
-            this.labelNombreUsuario.AutoSize = true;
-            this.labelNombreUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelNombreUsuario.Location = new System.Drawing.Point(693, 0);
-            this.labelNombreUsuario.Name = "labelNombreUsuario";
-            this.labelNombreUsuario.Size = new System.Drawing.Size(152, 62);
-            this.labelNombreUsuario.TabIndex = 12;
-            this.labelNombreUsuario.Text = "nombreUsuario";
-            this.labelNombreUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Gainsboro;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(237, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(82, 56);
@@ -130,6 +121,8 @@
             // 
             this.btnPedido.BackColor = System.Drawing.Color.Transparent;
             this.btnPedido.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPedido.FlatAppearance.BorderSize = 0;
+            this.btnPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPedido.ForeColor = System.Drawing.Color.Black;
             this.btnPedido.Location = new System.Drawing.Point(143, 3);
             this.btnPedido.Name = "btnPedido";
@@ -143,6 +136,8 @@
             // 
             this.btnListados.BackColor = System.Drawing.Color.Transparent;
             this.btnListados.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnListados.FlatAppearance.BorderSize = 0;
+            this.btnListados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnListados.Location = new System.Drawing.Point(325, 3);
             this.btnListados.Name = "btnListados";
             this.btnListados.Size = new System.Drawing.Size(89, 56);
@@ -153,28 +148,32 @@
             // 
             // btnPrecios
             // 
+            this.btnPrecios.BackColor = System.Drawing.Color.Transparent;
             this.btnPrecios.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPrecios.FlatAppearance.BorderSize = 0;
+            this.btnPrecios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrecios.Location = new System.Drawing.Point(514, 3);
             this.btnPrecios.Name = "btnPrecios";
             this.btnPrecios.Size = new System.Drawing.Size(81, 56);
             this.btnPrecios.TabIndex = 11;
             this.btnPrecios.Text = "Precios";
-            this.btnPrecios.UseVisualStyleBackColor = true;
+            this.btnPrecios.UseVisualStyleBackColor = false;
             this.btnPrecios.Click += new System.EventHandler(this.btnPrecios_Click);
             // 
-            // pictureBoxLogoSentidos
+            // btnIngresos
             // 
-            this.pictureBoxLogoSentidos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnIngresos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBoxLogoSentidos.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogoSentidos.Image")));
-            this.pictureBoxLogoSentidos.Location = new System.Drawing.Point(3, 3);
-            this.pictureBoxLogoSentidos.Name = "pictureBoxLogoSentidos";
-            this.pictureBoxLogoSentidos.Size = new System.Drawing.Size(134, 56);
-            this.pictureBoxLogoSentidos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxLogoSentidos.TabIndex = 15;
-            this.pictureBoxLogoSentidos.TabStop = false;
-            this.pictureBoxLogoSentidos.Click += new System.EventHandler(this.pictureBoxLogoSentidos_Click);
+            this.btnIngresos.BackColor = System.Drawing.Color.Transparent;
+            this.btnIngresos.FlatAppearance.BorderSize = 0;
+            this.btnIngresos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIngresos.Location = new System.Drawing.Point(420, 3);
+            this.btnIngresos.Name = "btnIngresos";
+            this.btnIngresos.Size = new System.Drawing.Size(88, 56);
+            this.btnIngresos.TabIndex = 9;
+            this.btnIngresos.Text = "Ingresos";
+            this.btnIngresos.UseVisualStyleBackColor = false;
             // 
             // pictureBoxImgUsuario
             // 
@@ -188,18 +187,46 @@
             this.pictureBoxImgUsuario.TabIndex = 16;
             this.pictureBoxImgUsuario.TabStop = false;
             // 
-            // btnIngresos
+            // labelNombreUsuario
             // 
-            this.btnIngresos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.labelNombreUsuario.AutoSize = true;
+            this.labelNombreUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.labelNombreUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelNombreUsuario.Location = new System.Drawing.Point(693, 0);
+            this.labelNombreUsuario.Name = "labelNombreUsuario";
+            this.labelNombreUsuario.Size = new System.Drawing.Size(152, 62);
+            this.labelNombreUsuario.TabIndex = 12;
+            this.labelNombreUsuario.Text = "nombreUsuario";
+            this.labelNombreUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // buttonGenerarFactura
+            // 
+            this.buttonGenerarFactura.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnIngresos.BackColor = System.Drawing.Color.Transparent;
-            this.btnIngresos.Location = new System.Drawing.Point(420, 3);
-            this.btnIngresos.Name = "btnIngresos";
-            this.btnIngresos.Size = new System.Drawing.Size(88, 56);
-            this.btnIngresos.TabIndex = 9;
-            this.btnIngresos.Text = "Ingresos";
-            this.btnIngresos.UseVisualStyleBackColor = false;
+            this.buttonGenerarFactura.BackColor = System.Drawing.Color.Transparent;
+            this.buttonGenerarFactura.FlatAppearance.BorderSize = 0;
+            this.buttonGenerarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGenerarFactura.Location = new System.Drawing.Point(601, 3);
+            this.buttonGenerarFactura.Name = "buttonGenerarFactura";
+            this.buttonGenerarFactura.Size = new System.Drawing.Size(86, 56);
+            this.buttonGenerarFactura.TabIndex = 17;
+            this.buttonGenerarFactura.Text = "Factura";
+            this.buttonGenerarFactura.UseVisualStyleBackColor = false;
+            this.buttonGenerarFactura.Click += new System.EventHandler(this.buttonGenerarFactura_Click);
+            // 
+            // btnSentidos
+            // 
+            this.btnSentidos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSentidos.BackgroundImage")));
+            this.btnSentidos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSentidos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSentidos.FlatAppearance.BorderSize = 0;
+            this.btnSentidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSentidos.Location = new System.Drawing.Point(3, 3);
+            this.btnSentidos.Name = "btnSentidos";
+            this.btnSentidos.Size = new System.Drawing.Size(134, 56);
+            this.btnSentidos.TabIndex = 18;
+            this.btnSentidos.UseVisualStyleBackColor = true;
             // 
             // panelFiltros
             // 
@@ -276,19 +303,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // buttonGenerarFactura
-            // 
-            this.buttonGenerarFactura.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonGenerarFactura.Location = new System.Drawing.Point(601, 3);
-            this.buttonGenerarFactura.Name = "buttonGenerarFactura";
-            this.buttonGenerarFactura.Size = new System.Drawing.Size(86, 56);
-            this.buttonGenerarFactura.TabIndex = 17;
-            this.buttonGenerarFactura.Text = "Factura";
-            this.buttonGenerarFactura.UseVisualStyleBackColor = true;
-            this.buttonGenerarFactura.Click += new System.EventHandler(this.buttonGenerarFactura_Click);
-            // 
             // FormSentidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -302,7 +316,6 @@
             this.flowLayoutPanelSentidos.ResumeLayout(false);
             this.tableLayoutPanel_menuSentidos.ResumeLayout(false);
             this.tableLayoutPanel_menuSentidos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogoSentidos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImgUsuario)).EndInit();
             this.panelFiltros.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -331,7 +344,7 @@
         private LinkLabel linkLabelDevStation;
         private Label labelDesarrolladoPor;
         private DataGridView dataGridView1;
-        private PictureBox pictureBoxLogoSentidos;
         private Button buttonGenerarFactura;
+        private Button btnSentidos;
     }
 }
