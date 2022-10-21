@@ -77,6 +77,7 @@ namespace Sentidos.Coneccion
             Debug.Write(hola.IsFaulted);
             Debug.Write("hola");
         }
+
         public async static Task<ListaUsuarios> traerUsuarios()
         {
             ListaUsuarios listaUsuarios= null;
