@@ -1,19 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="filtroListados.cs">
+    <Compile Update="Filtros\FiltroAgregarPedido.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="filtroPedidos.cs">
+    <Compile Update="Filtros\FiltroIngresos.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="filtroPrecios.cs">
+    <Compile Update="Filtros\filtroFactura.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="filtroReservas.cs">
+    <Compile Update="Filtros\filtroListados.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="FormSentidos.cs">
+    <Compile Update="Filtros\filtroPedidos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Filtros\filtroPrecios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Filtros\filtroReservas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Formularios\FormSentidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

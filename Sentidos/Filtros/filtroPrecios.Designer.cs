@@ -74,6 +74,8 @@
             // btnPreciosRestaurante
             // 
             this.btnPreciosRestaurante.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPreciosRestaurante.FlatAppearance.BorderSize = 0;
+            this.btnPreciosRestaurante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPreciosRestaurante.Location = new System.Drawing.Point(334, 3);
             this.btnPreciosRestaurante.Name = "btnPreciosRestaurante";
             this.btnPreciosRestaurante.Size = new System.Drawing.Size(150, 56);
@@ -85,6 +87,8 @@
             // btnPreciosCasa_Té
             // 
             this.btnPreciosCasa_Té.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPreciosCasa_Té.FlatAppearance.BorderSize = 0;
+            this.btnPreciosCasa_Té.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPreciosCasa_Té.Location = new System.Drawing.Point(490, 3);
             this.btnPreciosCasa_Té.Name = "btnPreciosCasa_Té";
             this.btnPreciosCasa_Té.Size = new System.Drawing.Size(157, 56);

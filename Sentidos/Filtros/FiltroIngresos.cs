@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sentidos
 {
-    public partial class filtroReservas : UserControl
+    public partial class FiltroIngresos : UserControl
     {
-        public filtroReservas()
+        public FiltroIngresos()
         {
             InitializeComponent();
         }

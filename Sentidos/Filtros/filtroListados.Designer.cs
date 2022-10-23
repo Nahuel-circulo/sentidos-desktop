@@ -101,6 +101,8 @@
             // btnListadoClientes
             // 
             this.btnListadoClientes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnListadoClientes.FlatAppearance.BorderSize = 0;
+            this.btnListadoClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnListadoClientes.Location = new System.Drawing.Point(334, 3);
             this.btnListadoClientes.Name = "btnListadoClientes";
             this.btnListadoClientes.Size = new System.Drawing.Size(150, 56);
@@ -112,6 +114,8 @@
             // btnListadoMesasReservadas
             // 
             this.btnListadoMesasReservadas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnListadoMesasReservadas.FlatAppearance.BorderSize = 0;
+            this.btnListadoMesasReservadas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnListadoMesasReservadas.Location = new System.Drawing.Point(490, 3);
             this.btnListadoMesasReservadas.Name = "btnListadoMesasReservadas";
             this.btnListadoMesasReservadas.Size = new System.Drawing.Size(157, 56);
