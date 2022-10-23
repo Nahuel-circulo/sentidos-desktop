@@ -72,8 +72,13 @@ namespace Sentidos
         {
             filtroFactura fp = new filtroFactura();
             traerFiltros(fp);
+            
         }
-
+        private void btnIngresos_Click(object sender, EventArgs e)
+        {
+            FiltroIngresos fp = new FiltroIngresos();
+            traerFiltros(fp);
+        }
 
 
         //Colores y vistas
@@ -109,6 +114,8 @@ namespace Sentidos
                 }
 
             }
-        } 
+        }
+
+        
     }
 }

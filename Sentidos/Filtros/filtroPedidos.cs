@@ -15,13 +15,21 @@ namespace Sentidos
         public filtroPedidos()
         {
             InitializeComponent();
-            colorBotonAceptarPedido();
+            
         }
 
-        public void colorBotonAceptarPedido()
+        private void traerFiltros(UserControl filtro)
         {
-            BotonColor botonColor = new BotonColor();
-            botonColor.colorBotonGeneral(btnAceptarPedido);
+            filtro.Dock = DockStyle.Fill;
+            tableLayoutPanelPedidos.Controls.Clear();
+            tableLayoutPanelPedidos.Controls.Add(filtro);
+            filtro.BringToFront();
+
+        }
+        private void btnAgregarPedido_Click(object sender, EventArgs e)
+        {
+            FiltroAgregarPedido filtroAgregarPedido = new FiltroAgregarPedido();
+            traerFiltros(filtroAgregarPedido);
         }
     }
 }

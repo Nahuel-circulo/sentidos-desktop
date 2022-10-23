@@ -174,6 +174,7 @@
             this.btnIngresos.TabIndex = 9;
             this.btnIngresos.Text = "Ingresos";
             this.btnIngresos.UseVisualStyleBackColor = false;
+            this.btnIngresos.Click += new System.EventHandler(this.btnIngresos_Click);
             // 
             // pictureBoxImgUsuario
             // 
@@ -258,7 +259,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(954, 31);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(954, 34);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // linkLabelDevStation
@@ -267,7 +268,7 @@
             this.linkLabelDevStation.Dock = System.Windows.Forms.DockStyle.Fill;
             this.linkLabelDevStation.Location = new System.Drawing.Point(838, 0);
             this.linkLabelDevStation.Name = "linkLabelDevStation";
-            this.linkLabelDevStation.Size = new System.Drawing.Size(113, 31);
+            this.linkLabelDevStation.Size = new System.Drawing.Size(113, 34);
             this.linkLabelDevStation.TabIndex = 0;
             this.linkLabelDevStation.TabStop = true;
             this.linkLabelDevStation.Text = "DevStation";
@@ -280,7 +281,7 @@
             this.labelDesarrolladoPor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelDesarrolladoPor.Location = new System.Drawing.Point(649, 0);
             this.labelDesarrolladoPor.Name = "labelDesarrolladoPor";
-            this.labelDesarrolladoPor.Size = new System.Drawing.Size(183, 31);
+            this.labelDesarrolladoPor.Size = new System.Drawing.Size(183, 34);
             this.labelDesarrolladoPor.TabIndex = 1;
             this.labelDesarrolladoPor.Text = "Desarrollado por:";
             this.labelDesarrolladoPor.TextAlign = System.Drawing.ContentAlignment.TopRight;
