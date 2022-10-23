@@ -53,14 +53,14 @@
             this.tableLayoutPanelAgregarQuitar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.027933F));
             this.tableLayoutPanelAgregarQuitar.Controls.Add(this.btnAgregar, 0, 1);
             this.tableLayoutPanelAgregarQuitar.Controls.Add(this.btnQuitar, 0, 3);
-            this.tableLayoutPanelAgregarQuitar.Location = new System.Drawing.Point(381, 3);
+            this.tableLayoutPanelAgregarQuitar.Location = new System.Drawing.Point(381, 16);
             this.tableLayoutPanelAgregarQuitar.Name = "tableLayoutPanelAgregarQuitar";
             this.tableLayoutPanelAgregarQuitar.RowCount = 5;
-            this.tableLayoutPanelAgregarQuitar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.84685F));
-            this.tableLayoutPanelAgregarQuitar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 53.15315F));
+            this.tableLayoutPanelAgregarQuitar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.4F));
+            this.tableLayoutPanelAgregarQuitar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.6F));
             this.tableLayoutPanelAgregarQuitar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.tableLayoutPanelAgregarQuitar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
-            this.tableLayoutPanelAgregarQuitar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 71F));
+            this.tableLayoutPanelAgregarQuitar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.tableLayoutPanelAgregarQuitar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 76F));
             this.tableLayoutPanelAgregarQuitar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanelAgregarQuitar.Size = new System.Drawing.Size(166, 307);
             this.tableLayoutPanelAgregarQuitar.TabIndex = 1;
@@ -72,9 +72,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAgregar.FlatAppearance.BorderSize = 0;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Location = new System.Drawing.Point(3, 62);
+            this.btnAgregar.Location = new System.Drawing.Point(3, 71);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(160, 60);
+            this.btnAgregar.Size = new System.Drawing.Size(160, 51);
             this.btnAgregar.TabIndex = 0;
             this.btnAgregar.Text = "Agrergar -->";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -88,7 +88,7 @@
             this.btnQuitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuitar.Location = new System.Drawing.Point(3, 176);
             this.btnQuitar.Name = "btnQuitar";
-            this.btnQuitar.Size = new System.Drawing.Size(160, 56);
+            this.btnQuitar.Size = new System.Drawing.Size(160, 51);
             this.btnQuitar.TabIndex = 1;
             this.btnQuitar.Text = "<-- Quitar";
             this.btnQuitar.UseVisualStyleBackColor = true;
@@ -114,7 +114,7 @@
             this.tableLayoutPanelListaComida.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 93.16239F));
             this.tableLayoutPanelListaComida.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanelListaComida.Controls.Add(this.dataGridViewListaComida, 1, 1);
-            this.tableLayoutPanelListaComida.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanelListaComida.Location = new System.Drawing.Point(0, 16);
             this.tableLayoutPanelListaComida.Name = "tableLayoutPanelListaComida";
             this.tableLayoutPanelListaComida.RowCount = 2;
             this.tableLayoutPanelListaComida.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.863192F));
@@ -139,7 +139,7 @@
             this.tableLayoutPanelListaPedido.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94.3662F));
             this.tableLayoutPanelListaPedido.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanelListaPedido.Controls.Add(this.dataGridViewListaPedido, 1, 1);
-            this.tableLayoutPanelListaPedido.Location = new System.Drawing.Point(553, 3);
+            this.tableLayoutPanelListaPedido.Location = new System.Drawing.Point(553, 16);
             this.tableLayoutPanelListaPedido.Name = "tableLayoutPanelListaPedido";
             this.tableLayoutPanelListaPedido.RowCount = 2;
             this.tableLayoutPanelListaPedido.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.537459F));
@@ -167,7 +167,7 @@
             this.tableLayoutPanelEliminarRealizar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 275F));
             this.tableLayoutPanelEliminarRealizar.Controls.Add(this.btnEliminar, 1, 1);
             this.tableLayoutPanelEliminarRealizar.Controls.Add(this.btnRealizarPedido, 3, 1);
-            this.tableLayoutPanelEliminarRealizar.Location = new System.Drawing.Point(0, 310);
+            this.tableLayoutPanelEliminarRealizar.Location = new System.Drawing.Point(0, 326);
             this.tableLayoutPanelEliminarRealizar.Name = "tableLayoutPanelEliminarRealizar";
             this.tableLayoutPanelEliminarRealizar.RowCount = 3;
             this.tableLayoutPanelEliminarRealizar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.3913F));
@@ -216,7 +216,7 @@
             this.Controls.Add(this.tableLayoutPanelListaComida);
             this.Controls.Add(this.tableLayoutPanelAgregarQuitar);
             this.Name = "FiltroAgregarPedido";
-            this.Size = new System.Drawing.Size(963, 400);
+            this.Size = new System.Drawing.Size(963, 437);
             this.tableLayoutPanelAgregarQuitar.ResumeLayout(false);
             this.tableLayoutPanelListaComida.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListaComida)).EndInit();
