@@ -1,4 +1,6 @@
-﻿using Sentidos.Coneccion;
+﻿using Microsoft.VisualBasic.Logging;
+using Sentidos.Coneccion;
+using Sentidos.Formularios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,42 +16,29 @@ namespace Sentidos
 {
     public partial class LogIn : Form
     {
+        private Personal personal;
+        
         public LogIn()
         {
             InitializeComponent();
         }
 
-        private async void button1_Click(object sender, EventArgs e)
+        internal Personal Personal { get => personal; }
+
+        private async void buttonAceptar_Click(object sender, EventArgs e)
         {
-            ListaUsuarios usuarios = await Conexion.traerUsuarios();
-            String usuario;
-            bool Flag = false;
-            int numeroUsuario = 0;
-            foreach(var item in usuarios.Results)
+            personal =await Conexion.Login(textBoxNombre_Usuario.Text, textBoxContraseña.Text);
+            
+            if (Personal != null)
             {
-                
-                Flag = item.Name == textBoxCamarero.Text ? true : false;
-                numeroUsuario = item.Name == textBoxCamarero.Text ? (int)item.Id : 0;
-                
+                this.Close();
             }
-            if (Flag)
+            else
             {
-                Reserva reserva = new Reserva();
-
-               
-                reserva.NroMesa = 5;
-                reserva.UserId = 4;
-                reserva.Comensales = 4;
-                reserva.Horario= "M" ;
-                reserva.Fecha = dateTimePicker1.Value.ToString("yyy") +"-"+ dateTimePicker1.Value.ToString("MM") + "-" + dateTimePicker1.Value.ToString("dd");
-
-                Conexion.enviarRecerva(reserva);
-
+                Form1 form1 = new Form1();
+                form1.ShowDialog();
             }
-
-           
-
-
         }
+
     }
 }

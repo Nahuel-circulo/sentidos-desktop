@@ -53,9 +53,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCant_Comensales)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            
             this.SuspendLayout();
             // 
             // tlpCamarero_mesa

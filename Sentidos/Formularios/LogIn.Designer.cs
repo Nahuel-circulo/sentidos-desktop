@@ -155,6 +155,7 @@
             this.buttonAceptar.TabIndex = 0;
             this.buttonAceptar.Text = "Aceptar";
             this.buttonAceptar.UseVisualStyleBackColor = true;
+            this.buttonAceptar.Click += new System.EventHandler(this.buttonAceptar_Click);
             // 
             // LogIn
             // 

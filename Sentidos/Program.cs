@@ -11,7 +11,12 @@ namespace Sentidos
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FormSentidos());
+            LogIn logIn = new LogIn();
+            Application.Run(logIn);
+            if (logIn.Personal != null)
+            {
+                Application.Run(new FormSentidos());
+            }
         }
     }
 }

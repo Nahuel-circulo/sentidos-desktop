@@ -76,3 +76,4 @@ C:\Users\franc\OneDrive\Desktop\Nueva carpeta\metodologia de sistemas\Escritorio
 C:\Users\franc\OneDrive\Desktop\Nueva carpeta\metodologia de sistemas\Escritorio\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.filtroListados.resources
 C:\Users\franc\OneDrive\Desktop\Nueva carpeta\metodologia de sistemas\Escritorio\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.filtroReservas.resources
 C:\Users\franc\OneDrive\Desktop\Nueva carpeta\metodologia de sistemas\Escritorio\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.LogIn.resources
+C:\Users\franc\OneDrive\Desktop\Nueva carpeta\metodologia de sistemas\Escritorio\sentidos-desktop\Sentidos\obj\Debug\net6.0-windows\Sentidos.Formularios.Form1.resources

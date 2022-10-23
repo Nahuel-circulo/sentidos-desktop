@@ -8,12 +8,13 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using System.Text.Json;
-using System.Text.Json.Serialization;
+//using System.Text.Json;
+//using System.Text.Json.Serialization;
 using System;
 using Newtonsoft.Json;
-using System.Text.Json.Nodes;
+//using System.Text.Json.Nodes;
 using System.Diagnostics;
+
 
 namespace Sentidos.Coneccion
 {
@@ -22,7 +23,7 @@ namespace Sentidos.Coneccion
         private const string url = "https://nahuelnp.pythonanywhere.com";
 
         private HttpClient Client;
-        JsonSerializerOptions options = new JsonSerializerOptions() { PropertyNameCaseInsensitive = true };
+        //JsonSerializerOptions options = new JsonSerializerOptions() { PropertyNameCaseInsensitive = true };
 
         public Conexion()
         {
@@ -95,7 +96,27 @@ namespace Sentidos.Coneccion
             }
             return listaUsuarios;
         }
-
+        public async static Task<Personal> Login(string usuario, string contraseña)
+        {
+            HttpClient Client = new HttpClient();
+            Client.BaseAddress = new Uri(url);
+            HttpResponseMessage response = await Client.GetAsync("api/personal/?username="+usuario+"&password="+contraseña);
+            LlamadaLogin llamadaLogin = null;
+            if (response.IsSuccessStatusCode)
+            {
+                var a = response.Content.ReadAsStringAsync().Result;
+                Debug.WriteLine(a);
+                llamadaLogin = JsonConvert.DeserializeObject<LlamadaLogin>(a);
+               
+               
+            }
+            if(llamadaLogin.Results.Count != 0)
+            {
+                
+                return llamadaLogin.Results[0];
+            }
+            return null;
+        }
       
     }
 }

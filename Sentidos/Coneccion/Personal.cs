@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Sentidos.Coneccion
 {
-    internal class Usuarios
+    internal class Personal
     {
         public long Id { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string Gender { get; set; }
+        public string Username { get; set; }
+        public string Role { get; set; }
+   
     }
 }
