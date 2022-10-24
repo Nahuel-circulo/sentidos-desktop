@@ -15,7 +15,7 @@ namespace Sentidos
             Application.Run(logIn);
             if (logIn.Personal != null)
             {
-                Application.Run(new FormSentidos());
+                Application.Run(new FormSentidos(logIn.Personal));
             }
         }
     }

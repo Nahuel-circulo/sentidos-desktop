@@ -8,11 +8,11 @@ namespace Sentidos.Coneccion
 {
     internal class Comida
     {
-        public long Id { get; set; }
+        private long Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public long Price { get; set; }
-        public Uri Image { get; set; }
+        private Uri Image { get; set; }
         public string Category { get; set; }
     
     }

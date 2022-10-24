@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sentidos.Coneccion
+namespace Sentidos.Coneccion.Entidades
 {
     internal class Reserva
     {
         public int NroMesa { get; set; }
-        public String Horario { get; set; }
+        public string Horario { get; set; }
         public string Fecha { get; set; }
         public bool Confirmado { get; set; }
         public int Comensales { get; set; }

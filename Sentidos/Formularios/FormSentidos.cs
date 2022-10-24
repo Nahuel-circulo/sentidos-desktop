@@ -1,4 +1,4 @@
-﻿using Sentidos.Coneccion;
+﻿using Sentidos.Coneccion.Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,11 +13,15 @@ namespace Sentidos
 {
     public partial class FormSentidos : Form
     {
-        public FormSentidos()
+        private Personal Personal;
+        public FormSentidos(Personal personal)
         {
             InitializeComponent();
             ejecutarVista();
-
+            
+            this.Personal= personal;
+            labelNombreUsuario.Text = personal.username;
+            labelNombreUsuario.Refresh();
             
         }
 

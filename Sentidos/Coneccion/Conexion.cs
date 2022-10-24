@@ -14,7 +14,8 @@ using System;
 using Newtonsoft.Json;
 //using System.Text.Json.Nodes;
 using System.Diagnostics;
-
+using Sentidos.Coneccion.Entidades;
+using Sentidos.Coneccion.Llamadas;
 
 namespace Sentidos.Coneccion
 {
@@ -29,31 +30,44 @@ namespace Sentidos.Coneccion
         {
 
         }
-        public static async Task<Mesa> TraerMesas(int num)
+        public static async Task<LlamadaReservasPorFecha> TraerMesasReservadas()
         {
-            Mesa Mesa = null;
             HttpClient Client = new HttpClient();
             Client.BaseAddress = new Uri(url);
-
-
-            HttpResponseMessage response = await Client.GetAsync("/api/food/" + num);
+            char c = DateTime.Now.Hour > 12 ? 'm' : 't';
+            HttpResponseMessage response = await Client.GetAsync("/api/reservation/?hora=" + c + "&fecha=" + DateTime.Now.GetDateTimeFormats()[5] );
+            LlamadaReservasPorFecha reservasPorFecha = null;
             if (response.IsSuccessStatusCode)
             {
 
                 var a = response.Content.ReadAsStringAsync().Result;
-                Mesa = JsonConvert.DeserializeObject<Mesa>(a);
+                reservasPorFecha = JsonConvert.DeserializeObject<LlamadaReservasPorFecha>(a);
 
 
             }
 
-            return Mesa;
+            return reservasPorFecha;
         }
+        public static async Task<LlamadaMesas> TraerMesas()
+        {
+            HttpClient Client = new HttpClient();
+            Client.BaseAddress = new Uri(url);
+            HttpResponseMessage response = await Client.GetAsync("/api/tables/");
+            LlamadaMesas llamadaMesas = null;
+            if (response.IsSuccessStatusCode)
+            {
+                var a = response.Content.ReadAsStringAsync().Result;
+                llamadaMesas = JsonConvert.DeserializeObject<LlamadaMesas>(a);
+            }
+            return llamadaMesas;
+        }
+        
 
-        public static async Task<ListaComidas> TraerComidas(char x)
+        public static async Task<LlamadaComidas> TraerComidas(char x)
         {
             //Debug.Write("HOLA");
 
-            ListaComidas listaComidas= null;
+            LlamadaComidas listaComidas= null;
             HttpClient Client = new HttpClient();
             Client.BaseAddress = new Uri(url);
             HttpResponseMessage response = await Client.GetAsync("api/food?category="+x);
@@ -62,7 +76,7 @@ namespace Sentidos.Coneccion
             {
                 var a = response.Content.ReadAsStringAsync().Result;
                
-                listaComidas = JsonConvert.DeserializeObject<ListaComidas>(a);
+                listaComidas = JsonConvert.DeserializeObject<LlamadaComidas>(a);
 
 
             }
@@ -79,9 +93,10 @@ namespace Sentidos.Coneccion
             Debug.Write("hola");
         }
 
-        public async static Task<ListaUsuarios> traerUsuarios()
+        public async static Task<LlamadaUsuario> traerUsuarios()
         {
-            ListaUsuarios listaUsuarios= null;
+            
+            LlamadaUsuario listaUsuarios= null;
             HttpClient Client = new HttpClient();
             Client.BaseAddress = new Uri(url);
             HttpResponseMessage response = await Client.GetAsync("api/users");
@@ -90,7 +105,7 @@ namespace Sentidos.Coneccion
                
                 var a = response.Content.ReadAsStringAsync().Result;
 
-                listaUsuarios = JsonConvert.DeserializeObject<ListaUsuarios>(a);
+                listaUsuarios = JsonConvert.DeserializeObject<LlamadaUsuario>(a);
 
 
             }

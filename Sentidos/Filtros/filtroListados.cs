@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Sentidos.Coneccion;
+using Sentidos.Coneccion.Llamadas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,10 +20,38 @@ namespace Sentidos
             colorBoton();
         }
 
-        private void btnListadoClientes_Click(object sender, EventArgs e)
+        private async void btnListadoClientes_Click(object sender, EventArgs e)
         {
             dataGridViewListadosDefault.Columns.Clear();
             crearColumnasDataGridClientes();
+            LlamadaUsuario usuario = await Conexion.traerUsuarios();
+            foreach (var item in usuario.Results)
+            {
+                dataGridViewListadosDefault.Rows.Add(item.Name);
+            }
+        }
+        private async void btnListadoMesasReservadas_Click(object sender, EventArgs e)
+        {
+            dataGridViewListadosDefault.Columns.Clear();
+            crearColumnasDataGridMesas();
+            LlamadaReservasPorFecha llamadaReservasPorFecha = await Conexion.TraerMesasReservadas();
+            LlamadaMesas llamadaMesas = await Conexion.TraerMesas();
+            foreach(var item in llamadaMesas.Results)
+            {
+                bool flag=false;
+                foreach(var item2 in llamadaReservasPorFecha.Results)
+                {
+                    if(item.Id == item2.NroMesa)
+                    {
+                        flag = true;
+                    }
+                }
+                if (flag) dataGridViewListadosDefault.Rows.Add(item.Id, "reservado");
+                else dataGridViewListadosDefault.Rows.Add(item.Id, "disponible");
+
+
+
+            }
         }
 
         private void crearColumnasDataGridClientes()
@@ -52,11 +82,6 @@ namespace Sentidos
             dataGridViewListadosDefault.Columns.Add(columnEstadoMesas);
         }
 
-        private void btnListadoMesasReservadas_Click(object sender, EventArgs e)
-        {
-            dataGridViewListadosDefault.Columns.Clear();
-            crearColumnasDataGridMesas();
-        }
 
         public void colorBoton()
         {

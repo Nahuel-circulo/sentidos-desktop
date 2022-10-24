@@ -1,4 +1,5 @@
 ﻿using Sentidos.Coneccion;
+using Sentidos.Coneccion.Llamadas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,6 +26,7 @@ namespace Sentidos
             
 
             labelListaPrecios.Text = "Lista de precios del restaurante:";
+            dataGridViewPrecios.Rows.Clear();
             traerComida('f'); 
         }
 
@@ -34,6 +36,7 @@ namespace Sentidos
            
 
             labelListaPrecios.Text = "Lista de precios de la Casa de Té:";
+            dataGridViewPrecios.Rows.Clear();
             traerComida('t');
 
 
@@ -58,8 +61,15 @@ namespace Sentidos
         }
         private async void traerComida(char x)
         {
-            ListaComidas listaComidas = await Conexion.TraerComidas(x);
-            dataGridViewPrecios.DataSource = listaComidas.Results;
+            LlamadaComidas listaComidas = await Conexion.TraerComidas(x);
+            foreach (var item in listaComidas.Results)
+            {
+
+                dataGridViewPrecios.Rows.Add(item.Name,item.Description,item.Price);
+                   
+            }
+            
+            //dataGridViewPrecios.DataSource = listaComidas.Results;
             dataGridViewPrecios.Refresh();
         }
     }

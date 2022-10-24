@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualBasic.Logging;
 using Sentidos.Coneccion;
+using Sentidos.Coneccion.Entidades;
 using Sentidos.Formularios;
 using System;
 using System.Collections.Generic;

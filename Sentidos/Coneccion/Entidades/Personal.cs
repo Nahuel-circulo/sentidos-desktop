@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sentidos.Coneccion
+namespace Sentidos.Coneccion.Entidades
 {
-    internal class Personal
+    public class Personal
     {
         public long Id { get; set; }
-        public string Username { get; set; }
+        public string username { get; set; }
         public string Role { get; set; }
-   
+
     }
 }

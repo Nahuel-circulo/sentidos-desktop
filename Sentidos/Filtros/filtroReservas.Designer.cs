@@ -53,7 +53,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCant_Comensales)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            
             this.SuspendLayout();
             // 
             // tlpCamarero_mesa
@@ -244,6 +243,7 @@
             this.btnAceptar.TabIndex = 0;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // tableLayoutPanel5
             // 
