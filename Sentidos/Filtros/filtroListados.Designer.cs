@@ -28,6 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tlpCamarero_mesa = new System.Windows.Forms.TableLayoutPanel();
             this.labelCamarero = new System.Windows.Forms.Label();
             this.textBoxCamarero = new System.Windows.Forms.TextBox();
@@ -95,33 +100,43 @@
             this.tableLayoutPanellistadosTop.RowCount = 2;
             this.tableLayoutPanellistadosTop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 84.9315F));
             this.tableLayoutPanellistadosTop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.06849F));
-            this.tableLayoutPanellistadosTop.Size = new System.Drawing.Size(964, 73);
+            this.tableLayoutPanellistadosTop.Size = new System.Drawing.Size(964, 65);
             this.tableLayoutPanellistadosTop.TabIndex = 1;
             // 
             // btnListadoClientes
             // 
+            this.btnListadoClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.btnListadoClientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnListadoClientes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnListadoClientes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.btnListadoClientes.FlatAppearance.BorderSize = 0;
             this.btnListadoClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListadoClientes.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnListadoClientes.ForeColor = System.Drawing.Color.White;
             this.btnListadoClientes.Location = new System.Drawing.Point(334, 3);
             this.btnListadoClientes.Name = "btnListadoClientes";
-            this.btnListadoClientes.Size = new System.Drawing.Size(150, 56);
+            this.btnListadoClientes.Size = new System.Drawing.Size(150, 49);
             this.btnListadoClientes.TabIndex = 0;
             this.btnListadoClientes.Text = "Clientes";
-            this.btnListadoClientes.UseVisualStyleBackColor = true;
+            this.btnListadoClientes.UseVisualStyleBackColor = false;
             this.btnListadoClientes.Click += new System.EventHandler(this.btnListadoClientes_Click);
             // 
             // btnListadoMesasReservadas
             // 
+            this.btnListadoMesasReservadas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.btnListadoMesasReservadas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnListadoMesasReservadas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnListadoMesasReservadas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.btnListadoMesasReservadas.FlatAppearance.BorderSize = 0;
             this.btnListadoMesasReservadas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListadoMesasReservadas.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnListadoMesasReservadas.ForeColor = System.Drawing.Color.White;
             this.btnListadoMesasReservadas.Location = new System.Drawing.Point(490, 3);
             this.btnListadoMesasReservadas.Name = "btnListadoMesasReservadas";
-            this.btnListadoMesasReservadas.Size = new System.Drawing.Size(157, 56);
+            this.btnListadoMesasReservadas.Size = new System.Drawing.Size(157, 49);
             this.btnListadoMesasReservadas.TabIndex = 1;
             this.btnListadoMesasReservadas.Text = "Mesas Reservadas";
-            this.btnListadoMesasReservadas.UseVisualStyleBackColor = true;
+            this.btnListadoMesasReservadas.UseVisualStyleBackColor = false;
             this.btnListadoMesasReservadas.Click += new System.EventHandler(this.btnListadoMesasReservadas_Click);
             // 
             // tableLayoutPanelListados
@@ -144,6 +159,7 @@
             // 
             this.labelListados.AutoSize = true;
             this.labelListados.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelListados.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelListados.Location = new System.Drawing.Point(162, 0);
             this.labelListados.Name = "labelListados";
             this.labelListados.Size = new System.Drawing.Size(635, 34);
@@ -153,10 +169,43 @@
             // 
             // dataGridViewListadosDefault
             // 
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewListadosDefault.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewListadosDefault.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewListadosDefault.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewListadosDefault.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewListadosDefault.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewListadosDefault.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewListadosDefault.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewListadosDefault.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
             this.dataGridViewListadosDefault.Location = new System.Drawing.Point(162, 37);
             this.dataGridViewListadosDefault.Name = "dataGridViewListadosDefault";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewListadosDefault.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewListadosDefault.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewListadosDefault.RowTemplate.Height = 25;
             this.dataGridViewListadosDefault.Size = new System.Drawing.Size(635, 362);
             this.dataGridViewListadosDefault.TabIndex = 1;
@@ -165,6 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MistyRose;
             this.Controls.Add(this.tableLayoutPanelListados);
             this.Controls.Add(this.tableLayoutPanellistadosTop);
             this.Name = "filtroListados";

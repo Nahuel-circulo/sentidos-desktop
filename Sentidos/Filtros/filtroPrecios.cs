@@ -15,7 +15,6 @@ namespace Sentidos
         public filtroPrecios()
         {
             InitializeComponent();
-            colorBoton();
         }
 
         private void btnPreciosRestaurante_Click(object sender, EventArgs e)
@@ -31,15 +30,5 @@ namespace Sentidos
         }
 
 
-        public void colorBoton()
-        {
-            Button[] arrayBoton = { btnPreciosRestaurante, btnPreciosCasa_Té };
-            BotonColor botonColor = new BotonColor();
-            for (int i = 0; i < arrayBoton.Length; i++)
-            {
-                botonColor.colorBotonMenu(arrayBoton[i]);
-            }
-
-        }
     }
 }

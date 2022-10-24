@@ -15,14 +15,8 @@ namespace Sentidos
         public filtroReservas()
         {
             InitializeComponent();
-            colorBotonAceptar();
+            
         }
 
-
-        public void colorBotonAceptar()
-        {
-            BotonColor botonColor = new BotonColor();
-            botonColor.colorBotonGeneral(btnAceptar);
-        }
     }
 }
