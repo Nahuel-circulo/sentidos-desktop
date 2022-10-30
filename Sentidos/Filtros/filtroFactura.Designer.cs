@@ -28,6 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanelListados = new System.Windows.Forms.TableLayoutPanel();
             this.labelFacturas = new System.Windows.Forms.Label();
             this.dataGridViewPedidosDefault = new System.Windows.Forms.DataGridView();
@@ -64,22 +69,56 @@
             // 
             this.labelFacturas.AutoSize = true;
             this.labelFacturas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelFacturas.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelFacturas.Location = new System.Drawing.Point(162, 0);
             this.labelFacturas.Name = "labelFacturas";
             this.labelFacturas.Size = new System.Drawing.Size(635, 34);
             this.labelFacturas.TabIndex = 0;
-            this.labelFacturas.Text = "labelListadoPedidosPorDefault";
+            this.labelFacturas.Text = "Pedidos Realizados:";
             this.labelFacturas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dataGridViewPedidosDefault
             // 
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewPedidosDefault.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewPedidosDefault.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewPedidosDefault.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewPedidosDefault.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewPedidosDefault.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewPedidosDefault.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnNombre,
             this.ColumnMesa});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewPedidosDefault.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewPedidosDefault.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewPedidosDefault.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
             this.dataGridViewPedidosDefault.Location = new System.Drawing.Point(162, 37);
             this.dataGridViewPedidosDefault.Name = "dataGridViewPedidosDefault";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewPedidosDefault.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewPedidosDefault.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewPedidosDefault.RowTemplate.Height = 25;
             this.dataGridViewPedidosDefault.Size = new System.Drawing.Size(635, 362);
             this.dataGridViewPedidosDefault.TabIndex = 1;
@@ -150,20 +189,27 @@
             // 
             // buttonGenerarFactura
             // 
+            this.buttonGenerarFactura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(122)))), ((int)(((byte)(127)))));
+            this.buttonGenerarFactura.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonGenerarFactura.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonGenerarFactura.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(122)))), ((int)(((byte)(127)))));
             this.buttonGenerarFactura.FlatAppearance.BorderSize = 0;
+            this.buttonGenerarFactura.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.buttonGenerarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGenerarFactura.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonGenerarFactura.ForeColor = System.Drawing.Color.White;
             this.buttonGenerarFactura.Location = new System.Drawing.Point(613, 3);
             this.buttonGenerarFactura.Name = "buttonGenerarFactura";
             this.buttonGenerarFactura.Size = new System.Drawing.Size(182, 47);
             this.buttonGenerarFactura.TabIndex = 1;
             this.buttonGenerarFactura.Text = "Generar factura";
-            this.buttonGenerarFactura.UseVisualStyleBackColor = true;
+            this.buttonGenerarFactura.UseVisualStyleBackColor = false;
             // 
             // filtroFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MistyRose;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.tableLayoutPanelListados);
             this.Name = "filtroFactura";

@@ -15,15 +15,7 @@ namespace Sentidos
         public filtroFactura()
         {
             InitializeComponent();
-            colorBotonGenerarFactura();
 
-
-        }
-
-        public void colorBotonGenerarFactura()
-        {
-            BotonColor botonColor = new BotonColor();
-            botonColor.colorBotonGeneral(buttonGenerarFactura);
         }
         
 

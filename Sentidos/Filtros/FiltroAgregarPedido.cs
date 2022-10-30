@@ -37,5 +37,15 @@ namespace Sentidos
             tableLayoutPanelListaComida.Visible = false;
             tableLayoutPanelListaPedido.Visible = false;
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnQuitar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

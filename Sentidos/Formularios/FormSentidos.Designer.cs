@@ -59,10 +59,11 @@
             // 
             // flowLayoutPanelSentidos
             // 
-            this.flowLayoutPanelSentidos.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanelSentidos.BackColor = System.Drawing.Color.MistyRose;
             this.flowLayoutPanelSentidos.Controls.Add(this.tableLayoutPanel_menuSentidos);
             this.flowLayoutPanelSentidos.Controls.Add(this.panelFiltros);
             this.flowLayoutPanelSentidos.Controls.Add(this.tableLayoutPanel1);
+            this.flowLayoutPanelSentidos.ForeColor = System.Drawing.SystemColors.ControlText;
             this.flowLayoutPanelSentidos.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanelSentidos.Name = "flowLayoutPanelSentidos";
             this.flowLayoutPanelSentidos.Size = new System.Drawing.Size(957, 618);
@@ -73,7 +74,7 @@
             // 
             this.tableLayoutPanel_menuSentidos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel_menuSentidos.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel_menuSentidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.tableLayoutPanel_menuSentidos.ColumnCount = 9;
             this.tableLayoutPanel_menuSentidos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.82906F));
             this.tableLayoutPanel_menuSentidos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.17094F));
@@ -97,16 +98,20 @@
             this.tableLayoutPanel_menuSentidos.Name = "tableLayoutPanel_menuSentidos";
             this.tableLayoutPanel_menuSentidos.RowCount = 1;
             this.tableLayoutPanel_menuSentidos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel_menuSentidos.Size = new System.Drawing.Size(953, 62);
+            this.tableLayoutPanel_menuSentidos.Size = new System.Drawing.Size(951, 62);
             this.tableLayoutPanel_menuSentidos.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(122)))), ((int)(((byte)(127)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(237, 3);
+            this.button1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(235, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(82, 56);
             this.button1.TabIndex = 14;
@@ -116,14 +121,17 @@
             // 
             // btnPedido
             // 
-            this.btnPedido.BackColor = System.Drawing.Color.Transparent;
+            this.btnPedido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.btnPedido.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPedido.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPedido.FlatAppearance.BorderSize = 0;
+            this.btnPedido.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(122)))), ((int)(((byte)(127)))));
             this.btnPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPedido.ForeColor = System.Drawing.Color.Black;
-            this.btnPedido.Location = new System.Drawing.Point(143, 3);
+            this.btnPedido.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnPedido.ForeColor = System.Drawing.Color.White;
+            this.btnPedido.Location = new System.Drawing.Point(142, 3);
             this.btnPedido.Name = "btnPedido";
-            this.btnPedido.Size = new System.Drawing.Size(88, 56);
+            this.btnPedido.Size = new System.Drawing.Size(87, 56);
             this.btnPedido.TabIndex = 13;
             this.btnPedido.Text = "Pedidos";
             this.btnPedido.UseVisualStyleBackColor = false;
@@ -131,11 +139,15 @@
             // 
             // btnListados
             // 
-            this.btnListados.BackColor = System.Drawing.Color.Transparent;
+            this.btnListados.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.btnListados.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnListados.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnListados.FlatAppearance.BorderSize = 0;
+            this.btnListados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(122)))), ((int)(((byte)(127)))));
             this.btnListados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListados.Location = new System.Drawing.Point(325, 3);
+            this.btnListados.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnListados.ForeColor = System.Drawing.Color.White;
+            this.btnListados.Location = new System.Drawing.Point(323, 3);
             this.btnListados.Name = "btnListados";
             this.btnListados.Size = new System.Drawing.Size(89, 56);
             this.btnListados.TabIndex = 8;
@@ -145,11 +157,15 @@
             // 
             // btnPrecios
             // 
-            this.btnPrecios.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrecios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.btnPrecios.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPrecios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPrecios.FlatAppearance.BorderSize = 0;
+            this.btnPrecios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(122)))), ((int)(((byte)(127)))));
             this.btnPrecios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrecios.Location = new System.Drawing.Point(514, 3);
+            this.btnPrecios.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnPrecios.ForeColor = System.Drawing.Color.White;
+            this.btnPrecios.Location = new System.Drawing.Point(512, 3);
             this.btnPrecios.Name = "btnPrecios";
             this.btnPrecios.Size = new System.Drawing.Size(81, 56);
             this.btnPrecios.TabIndex = 11;
@@ -162,10 +178,14 @@
             this.btnIngresos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnIngresos.BackColor = System.Drawing.Color.Transparent;
+            this.btnIngresos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.btnIngresos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIngresos.FlatAppearance.BorderSize = 0;
+            this.btnIngresos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(122)))), ((int)(((byte)(127)))));
             this.btnIngresos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIngresos.Location = new System.Drawing.Point(420, 3);
+            this.btnIngresos.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnIngresos.ForeColor = System.Drawing.Color.White;
+            this.btnIngresos.Location = new System.Drawing.Point(418, 3);
             this.btnIngresos.Name = "btnIngresos";
             this.btnIngresos.Size = new System.Drawing.Size(88, 56);
             this.btnIngresos.TabIndex = 9;
@@ -178,9 +198,10 @@
             this.pictureBoxImgUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBoxImgUsuario.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxImgUsuario.Image")));
             this.pictureBoxImgUsuario.InitialImage = null;
-            this.pictureBoxImgUsuario.Location = new System.Drawing.Point(851, 3);
+            this.pictureBoxImgUsuario.Location = new System.Drawing.Point(852, 6);
+            this.pictureBoxImgUsuario.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBoxImgUsuario.Name = "pictureBoxImgUsuario";
-            this.pictureBoxImgUsuario.Size = new System.Drawing.Size(99, 56);
+            this.pictureBoxImgUsuario.Size = new System.Drawing.Size(93, 50);
             this.pictureBoxImgUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxImgUsuario.TabIndex = 16;
             this.pictureBoxImgUsuario.TabStop = false;
@@ -190,7 +211,9 @@
             this.labelNombreUsuario.AutoSize = true;
             this.labelNombreUsuario.BackColor = System.Drawing.Color.Transparent;
             this.labelNombreUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelNombreUsuario.Location = new System.Drawing.Point(693, 0);
+            this.labelNombreUsuario.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelNombreUsuario.ForeColor = System.Drawing.Color.White;
+            this.labelNombreUsuario.Location = new System.Drawing.Point(691, 0);
             this.labelNombreUsuario.Name = "labelNombreUsuario";
             this.labelNombreUsuario.Size = new System.Drawing.Size(152, 62);
             this.labelNombreUsuario.TabIndex = 12;
@@ -202,10 +225,14 @@
             this.buttonGenerarFactura.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonGenerarFactura.BackColor = System.Drawing.Color.Transparent;
+            this.buttonGenerarFactura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.buttonGenerarFactura.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonGenerarFactura.FlatAppearance.BorderSize = 0;
+            this.buttonGenerarFactura.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(122)))), ((int)(((byte)(127)))));
             this.buttonGenerarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonGenerarFactura.Location = new System.Drawing.Point(601, 3);
+            this.buttonGenerarFactura.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonGenerarFactura.ForeColor = System.Drawing.Color.White;
+            this.buttonGenerarFactura.Location = new System.Drawing.Point(599, 3);
             this.buttonGenerarFactura.Name = "buttonGenerarFactura";
             this.buttonGenerarFactura.Size = new System.Drawing.Size(86, 56);
             this.buttonGenerarFactura.TabIndex = 17;
@@ -220,14 +247,16 @@
             this.btnSentidos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSentidos.FlatAppearance.BorderSize = 0;
             this.btnSentidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSentidos.Location = new System.Drawing.Point(3, 3);
+            this.btnSentidos.Location = new System.Drawing.Point(4, 4);
+            this.btnSentidos.Margin = new System.Windows.Forms.Padding(4);
             this.btnSentidos.Name = "btnSentidos";
-            this.btnSentidos.Size = new System.Drawing.Size(134, 56);
+            this.btnSentidos.Size = new System.Drawing.Size(131, 54);
             this.btnSentidos.TabIndex = 18;
             this.btnSentidos.UseVisualStyleBackColor = true;
             // 
             // panelFiltros
             // 
+            this.panelFiltros.BackColor = System.Drawing.Color.MistyRose;
             this.panelFiltros.Location = new System.Drawing.Point(3, 71);
             this.panelFiltros.Name = "panelFiltros";
             this.panelFiltros.Size = new System.Drawing.Size(953, 510);
@@ -236,6 +265,7 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.38478F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.61522F));
@@ -246,32 +276,40 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(954, 34);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(951, 31);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // linkLabelDevStation
             // 
+            this.linkLabelDevStation.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.linkLabelDevStation.AutoSize = true;
+            this.linkLabelDevStation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkLabelDevStation.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.linkLabelDevStation.Location = new System.Drawing.Point(838, 0);
+            this.linkLabelDevStation.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.linkLabelDevStation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+            this.linkLabelDevStation.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+            this.linkLabelDevStation.Location = new System.Drawing.Point(835, 0);
             this.linkLabelDevStation.Name = "linkLabelDevStation";
-            this.linkLabelDevStation.Size = new System.Drawing.Size(113, 34);
+            this.linkLabelDevStation.Size = new System.Drawing.Size(113, 31);
             this.linkLabelDevStation.TabIndex = 0;
             this.linkLabelDevStation.TabStop = true;
             this.linkLabelDevStation.Text = "DevStation";
-            this.linkLabelDevStation.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.linkLabelDevStation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkLabelDevStation.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(122)))), ((int)(((byte)(127)))));
             this.linkLabelDevStation.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelDevStation_LinkClicked);
             // 
             // labelDesarrolladoPor
             // 
             this.labelDesarrolladoPor.AutoSize = true;
             this.labelDesarrolladoPor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelDesarrolladoPor.Location = new System.Drawing.Point(649, 0);
+            this.labelDesarrolladoPor.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelDesarrolladoPor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
+            this.labelDesarrolladoPor.Location = new System.Drawing.Point(647, 0);
             this.labelDesarrolladoPor.Name = "labelDesarrolladoPor";
-            this.labelDesarrolladoPor.Size = new System.Drawing.Size(183, 34);
+            this.labelDesarrolladoPor.Size = new System.Drawing.Size(182, 31);
             this.labelDesarrolladoPor.TabIndex = 1;
             this.labelDesarrolladoPor.Text = "Desarrollado por:";
-            this.labelDesarrolladoPor.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.labelDesarrolladoPor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // button2
             // 
