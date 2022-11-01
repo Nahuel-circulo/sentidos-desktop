@@ -17,7 +17,7 @@ namespace Sentidos
         public filtroListados()
         {
             InitializeComponent();
-            colorBoton();
+
         }
 
         private async void btnListadoClientes_Click(object sender, EventArgs e)
@@ -82,6 +82,10 @@ namespace Sentidos
             dataGridViewListadosDefault.Columns.Add(columnEstadoMesas);
         }
 
+        private void btnListadoMesasReservadas_Click(object sender, EventArgs e)
+        {
+            dataGridViewListadosDefault.Columns.Clear();
+        }
 
         public void colorBoton()
         {

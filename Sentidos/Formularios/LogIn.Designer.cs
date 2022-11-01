@@ -33,9 +33,9 @@
             this.tableLayoutPanelLogIn = new System.Windows.Forms.TableLayoutPanel();
             this.labelNombreUsuario = new System.Windows.Forms.Label();
             this.labelContraseña = new System.Windows.Forms.Label();
-            this.textBoxNombre_Usuario = new System.Windows.Forms.TextBox();
             this.textBoxContraseña = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBoxNombre_Usuario = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.buttonAceptar = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
@@ -46,6 +46,7 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.MistyRose;
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanelLogIn);
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -63,9 +64,9 @@
             this.tableLayoutPanelLogIn.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
             this.tableLayoutPanelLogIn.Controls.Add(this.labelNombreUsuario, 1, 1);
             this.tableLayoutPanelLogIn.Controls.Add(this.labelContraseña, 1, 2);
-            this.tableLayoutPanelLogIn.Controls.Add(this.textBoxNombre_Usuario, 2, 1);
             this.tableLayoutPanelLogIn.Controls.Add(this.textBoxContraseña, 2, 2);
             this.tableLayoutPanelLogIn.Controls.Add(this.pictureBox1, 1, 0);
+            this.tableLayoutPanelLogIn.Controls.Add(this.textBoxNombre_Usuario, 2, 1);
             this.tableLayoutPanelLogIn.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanelLogIn.Name = "tableLayoutPanelLogIn";
             this.tableLayoutPanelLogIn.RowCount = 4;
@@ -80,6 +81,7 @@
             // 
             this.labelNombreUsuario.AutoSize = true;
             this.labelNombreUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelNombreUsuario.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelNombreUsuario.Location = new System.Drawing.Point(29, 88);
             this.labelNombreUsuario.Name = "labelNombreUsuario";
             this.labelNombreUsuario.Size = new System.Drawing.Size(119, 55);
@@ -91,6 +93,7 @@
             // 
             this.labelContraseña.AutoSize = true;
             this.labelContraseña.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelContraseña.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelContraseña.Location = new System.Drawing.Point(29, 143);
             this.labelContraseña.Name = "labelContraseña";
             this.labelContraseña.Size = new System.Drawing.Size(119, 40);
@@ -98,24 +101,16 @@
             this.labelContraseña.Text = "Contraseña:";
             this.labelContraseña.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
-            // textBoxNombre_Usuario
-            // 
-            this.textBoxNombre_Usuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxNombre_Usuario.Location = new System.Drawing.Point(154, 117);
-            this.textBoxNombre_Usuario.Name = "textBoxNombre_Usuario";
-            this.textBoxNombre_Usuario.Size = new System.Drawing.Size(236, 23);
-            this.textBoxNombre_Usuario.TabIndex = 3;
-            // 
             // textBoxContraseña
             // 
             this.textBoxContraseña.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxContraseña.Location = new System.Drawing.Point(154, 157);
+            this.textBoxContraseña.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxContraseña.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxContraseña.Location = new System.Drawing.Point(154, 155);
             this.textBoxContraseña.Name = "textBoxContraseña";
-            this.textBoxContraseña.Size = new System.Drawing.Size(236, 23);
+            this.textBoxContraseña.Size = new System.Drawing.Size(236, 25);
             this.textBoxContraseña.TabIndex = 4;
-            this.textBoxContraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox1
             // 
@@ -128,18 +123,29 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // textBoxNombre_Usuario
+            // 
+            this.textBoxNombre_Usuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxNombre_Usuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxNombre_Usuario.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxNombre_Usuario.Location = new System.Drawing.Point(154, 115);
+            this.textBoxNombre_Usuario.Name = "textBoxNombre_Usuario";
+            this.textBoxNombre_Usuario.Size = new System.Drawing.Size(236, 25);
+            this.textBoxNombre_Usuario.TabIndex = 7;
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.83042F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.16957F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.73604F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.26396F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 56F));
             this.tableLayoutPanel1.Controls.Add(this.buttonAceptar, 1, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 210);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.52941F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.47059F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.35294F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 67.64706F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(451, 100);
             this.tableLayoutPanel1.TabIndex = 2;
@@ -149,13 +155,18 @@
             this.buttonAceptar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAceptar.Location = new System.Drawing.Point(270, 36);
+            this.buttonAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(122)))), ((int)(((byte)(127)))));
+            this.buttonAceptar.FlatAppearance.BorderSize = 0;
+            this.buttonAceptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
+            this.buttonAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAceptar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonAceptar.ForeColor = System.Drawing.Color.White;
+            this.buttonAceptar.Location = new System.Drawing.Point(262, 25);
             this.buttonAceptar.Name = "buttonAceptar";
-            this.buttonAceptar.Size = new System.Drawing.Size(121, 29);
+            this.buttonAceptar.Size = new System.Drawing.Size(129, 40);
             this.buttonAceptar.TabIndex = 0;
             this.buttonAceptar.Text = "Aceptar";
-            this.buttonAceptar.UseVisualStyleBackColor = true;
-            this.buttonAceptar.Click += new System.EventHandler(this.buttonAceptar_Click);
+            this.buttonAceptar.UseVisualStyleBackColor = false;
             // 
             // LogIn
             // 
@@ -178,13 +189,13 @@
         #endregion
 
         private FlowLayoutPanel flowLayoutPanel1;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Button buttonAceptar;
         private TableLayoutPanel tableLayoutPanelLogIn;
         private Label labelNombreUsuario;
         private Label labelContraseña;
-        private TextBox textBoxNombre_Usuario;
         private TextBox textBoxContraseña;
-        private TableLayoutPanel tableLayoutPanel1;
-        private Button buttonAceptar;
         private PictureBox pictureBox1;
+        private TextBox textBoxNombre_Usuario;
     }
 }

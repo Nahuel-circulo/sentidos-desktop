@@ -15,7 +15,7 @@ namespace Sentidos
         public filtroReservas()
         {
             InitializeComponent();
-            colorBotonAceptar();
+            
         }
 
 

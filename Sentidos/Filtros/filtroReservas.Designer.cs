@@ -74,6 +74,7 @@
             // 
             this.labelNombreReserva.AutoSize = true;
             this.labelNombreReserva.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelNombreReserva.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelNombreReserva.Location = new System.Drawing.Point(3, 0);
             this.labelNombreReserva.Name = "labelNombreReserva";
             this.labelNombreReserva.Size = new System.Drawing.Size(299, 84);
@@ -85,9 +86,10 @@
             // 
             this.textBoxNombreComensal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxNombreComensal.Location = new System.Drawing.Point(308, 58);
+            this.textBoxNombreComensal.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxNombreComensal.Location = new System.Drawing.Point(308, 55);
             this.textBoxNombreComensal.Name = "textBoxNombreComensal";
-            this.textBoxNombreComensal.Size = new System.Drawing.Size(342, 23);
+            this.textBoxNombreComensal.Size = new System.Drawing.Size(342, 26);
             this.textBoxNombreComensal.TabIndex = 0;
             this.textBoxNombreComensal.Text = "Nombre del comenzal";
             this.textBoxNombreComensal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -96,6 +98,7 @@
             // 
             this.labelNumero_mesa.AutoSize = true;
             this.labelNumero_mesa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelNumero_mesa.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelNumero_mesa.Location = new System.Drawing.Point(3, 0);
             this.labelNumero_mesa.Name = "labelNumero_mesa";
             this.labelNumero_mesa.Size = new System.Drawing.Size(233, 84);
@@ -107,9 +110,10 @@
             // 
             this.numericUpDownNumero_mesa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDownNumero_mesa.Location = new System.Drawing.Point(242, 58);
+            this.numericUpDownNumero_mesa.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDownNumero_mesa.Location = new System.Drawing.Point(242, 55);
             this.numericUpDownNumero_mesa.Name = "numericUpDownNumero_mesa";
-            this.numericUpDownNumero_mesa.Size = new System.Drawing.Size(143, 23);
+            this.numericUpDownNumero_mesa.Size = new System.Drawing.Size(143, 26);
             this.numericUpDownNumero_mesa.TabIndex = 3;
             this.numericUpDownNumero_mesa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -174,6 +178,7 @@
             // 
             this.labelCant_Comensales.AutoSize = true;
             this.labelCant_Comensales.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelCant_Comensales.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelCant_Comensales.Location = new System.Drawing.Point(391, 0);
             this.labelCant_Comensales.Name = "labelCant_Comensales";
             this.labelCant_Comensales.Size = new System.Drawing.Size(191, 84);
@@ -185,9 +190,10 @@
             // 
             this.numericUpDownCant_Comensales.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDownCant_Comensales.Location = new System.Drawing.Point(588, 58);
+            this.numericUpDownCant_Comensales.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDownCant_Comensales.Location = new System.Drawing.Point(588, 55);
             this.numericUpDownCant_Comensales.Name = "numericUpDownCant_Comensales";
-            this.numericUpDownCant_Comensales.Size = new System.Drawing.Size(143, 23);
+            this.numericUpDownCant_Comensales.Size = new System.Drawing.Size(143, 26);
             this.numericUpDownCant_Comensales.TabIndex = 3;
             this.numericUpDownCant_Comensales.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -234,16 +240,21 @@
             // 
             // btnAceptar
             // 
+            this.btnAceptar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(122)))), ((int)(((byte)(127)))));
+            this.btnAceptar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAceptar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(122)))), ((int)(((byte)(127)))));
             this.btnAceptar.FlatAppearance.BorderSize = 0;
+            this.btnAceptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAceptar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAceptar.ForeColor = System.Drawing.Color.White;
             this.btnAceptar.Location = new System.Drawing.Point(696, 17);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(155, 48);
             this.btnAceptar.TabIndex = 0;
             this.btnAceptar.Text = "Aceptar";
-            this.btnAceptar.UseVisualStyleBackColor = true;
-            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
+            this.btnAceptar.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel5
             // 
@@ -287,6 +298,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MistyRose;
             this.Controls.Add(this.tableLayoutPanel4);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tlpCamarero_mesa);

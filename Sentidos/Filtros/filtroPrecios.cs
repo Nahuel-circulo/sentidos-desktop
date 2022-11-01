@@ -17,7 +17,6 @@ namespace Sentidos
         public filtroPrecios()
         {
             InitializeComponent();
-            colorBoton();
         }
 
         private void btnPreciosRestaurante_Click(object sender, EventArgs e)

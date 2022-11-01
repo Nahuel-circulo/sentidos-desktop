@@ -41,6 +41,7 @@
             // 
             // flpPedidos
             // 
+            this.flpPedidos.BackColor = System.Drawing.Color.MistyRose;
             this.flpPedidos.Controls.Add(this.tlpCamarero_mesa);
             this.flpPedidos.Controls.Add(this.tableLayoutPanelPedidos);
             this.flpPedidos.Location = new System.Drawing.Point(0, 0);
@@ -71,9 +72,10 @@
             // 
             this.numericUpDownNumero_mesa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDownNumero_mesa.Location = new System.Drawing.Point(206, 56);
+            this.numericUpDownNumero_mesa.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDownNumero_mesa.Location = new System.Drawing.Point(206, 53);
             this.numericUpDownNumero_mesa.Name = "numericUpDownNumero_mesa";
-            this.numericUpDownNumero_mesa.Size = new System.Drawing.Size(164, 23);
+            this.numericUpDownNumero_mesa.Size = new System.Drawing.Size(164, 26);
             this.numericUpDownNumero_mesa.TabIndex = 3;
             this.numericUpDownNumero_mesa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -81,6 +83,7 @@
             // 
             this.labelNumero_mesa.AutoSize = true;
             this.labelNumero_mesa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelNumero_mesa.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelNumero_mesa.Location = new System.Drawing.Point(3, 28);
             this.labelNumero_mesa.Name = "labelNumero_mesa";
             this.labelNumero_mesa.Size = new System.Drawing.Size(197, 54);
@@ -93,14 +96,20 @@
             this.btnAgregarPedido.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAgregarPedido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(122)))), ((int)(((byte)(127)))));
+            this.btnAgregarPedido.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarPedido.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(122)))), ((int)(((byte)(127)))));
             this.btnAgregarPedido.FlatAppearance.BorderSize = 0;
+            this.btnAgregarPedido.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.btnAgregarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarPedido.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAgregarPedido.ForeColor = System.Drawing.Color.White;
             this.btnAgregarPedido.Location = new System.Drawing.Point(604, 31);
             this.btnAgregarPedido.Name = "btnAgregarPedido";
             this.btnAgregarPedido.Size = new System.Drawing.Size(173, 48);
             this.btnAgregarPedido.TabIndex = 4;
             this.btnAgregarPedido.Text = "Agregar pedido";
-            this.btnAgregarPedido.UseVisualStyleBackColor = true;
+            this.btnAgregarPedido.UseVisualStyleBackColor = false;
             this.btnAgregarPedido.Click += new System.EventHandler(this.btnAgregarPedido_Click);
             // 
             // tableLayoutPanelPedidos

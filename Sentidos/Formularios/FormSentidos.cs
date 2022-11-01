@@ -83,43 +83,6 @@ namespace Sentidos
             FiltroIngresos fp = new FiltroIngresos();
             traerFiltros(fp);
         }
-
-
-        //Colores y vistas
-
-        private void ejecutarVista()
-        {
-            colorMenu();
-            funcionalidadColorBotones();
-        }
-        private void colorMenu()
-        {
-            tableLayoutPanel_menuSentidos.BackColor = ColorTranslator.FromHtml("#1a2223");
-            labelNombreUsuario.Font = new Font("Arial Narrow", 12, FontStyle.Bold);
-            labelNombreUsuario.ForeColor = Color.White;
-
-
-        }
-
-        private void funcionalidadColorBotones()
-        {
-            
-            Button[] arrayBotones = {btnPedido,button1,btnListados,btnIngresos, btnPrecios,buttonGenerarFactura, btnSentidos };
-
-            for (int i = 0; i < arrayBotones.Length; i++)
-            {
-                BotonColor botonColor = new BotonColor();
-                botonColor.colorBotonMenu(arrayBotones[i]);
-               
-                if (arrayBotones[i] == btnSentidos)
-                {
-                    arrayBotones[i].FlatAppearance.MouseDownBackColor = ColorTranslator.FromHtml("#1a2223");
-                    arrayBotones[i].FlatAppearance.MouseOverBackColor = ColorTranslator.FromHtml("#1a2223");
-                }
-
-            }
-        }
-
         
     }
 }
