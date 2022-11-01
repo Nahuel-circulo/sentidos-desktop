@@ -81,7 +81,7 @@
             // 
             this.labelNombreUsuario.AutoSize = true;
             this.labelNombreUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelNombreUsuario.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelNombreUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelNombreUsuario.Location = new System.Drawing.Point(29, 88);
             this.labelNombreUsuario.Name = "labelNombreUsuario";
             this.labelNombreUsuario.Size = new System.Drawing.Size(119, 55);
@@ -93,7 +93,7 @@
             // 
             this.labelContraseña.AutoSize = true;
             this.labelContraseña.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelContraseña.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelContraseña.Location = new System.Drawing.Point(29, 143);
             this.labelContraseña.Name = "labelContraseña";
             this.labelContraseña.Size = new System.Drawing.Size(119, 40);
@@ -106,10 +106,10 @@
             this.textBoxContraseña.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxContraseña.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxContraseña.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxContraseña.Location = new System.Drawing.Point(154, 155);
+            this.textBoxContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxContraseña.Location = new System.Drawing.Point(154, 156);
             this.textBoxContraseña.Name = "textBoxContraseña";
-            this.textBoxContraseña.Size = new System.Drawing.Size(236, 25);
+            this.textBoxContraseña.Size = new System.Drawing.Size(236, 24);
             this.textBoxContraseña.TabIndex = 4;
             // 
             // pictureBox1
@@ -128,10 +128,10 @@
             this.textBoxNombre_Usuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxNombre_Usuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxNombre_Usuario.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxNombre_Usuario.Location = new System.Drawing.Point(154, 115);
+            this.textBoxNombre_Usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxNombre_Usuario.Location = new System.Drawing.Point(154, 116);
             this.textBoxNombre_Usuario.Name = "textBoxNombre_Usuario";
-            this.textBoxNombre_Usuario.Size = new System.Drawing.Size(236, 25);
+            this.textBoxNombre_Usuario.Size = new System.Drawing.Size(236, 24);
             this.textBoxNombre_Usuario.TabIndex = 7;
             // 
             // tableLayoutPanel1
@@ -159,7 +159,7 @@
             this.buttonAceptar.FlatAppearance.BorderSize = 0;
             this.buttonAceptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.buttonAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAceptar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonAceptar.ForeColor = System.Drawing.Color.White;
             this.buttonAceptar.Location = new System.Drawing.Point(262, 25);
             this.buttonAceptar.Name = "buttonAceptar";
@@ -167,6 +167,7 @@
             this.buttonAceptar.TabIndex = 0;
             this.buttonAceptar.Text = "Aceptar";
             this.buttonAceptar.UseVisualStyleBackColor = false;
+            this.buttonAceptar.Click += new System.EventHandler(this.buttonAceptar_Click_1);
             // 
             // LogIn
             // 

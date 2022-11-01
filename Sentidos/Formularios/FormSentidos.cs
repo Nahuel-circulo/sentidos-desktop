@@ -17,7 +17,7 @@ namespace Sentidos
         public FormSentidos(Personal personal)
         {
             InitializeComponent();
-            ejecutarVista();
+            
             
             this.Personal= personal;
             labelNombreUsuario.Text = personal.username;

@@ -26,10 +26,13 @@ namespace Sentidos
 
         internal Personal Personal { get => personal; }
 
-        private async void buttonAceptar_Click(object sender, EventArgs e)
+     
+        
+
+        private async void buttonAceptar_Click_1(object sender, EventArgs e)
         {
-            personal =await Conexion.Login(textBoxNombre_Usuario.Text, textBoxContraseña.Text);
-            
+            personal = await Conexion.Login(textBoxNombre_Usuario.Text, textBoxContraseña.Text);
+
             if (Personal != null)
             {
                 this.Close();
@@ -40,6 +43,5 @@ namespace Sentidos
                 form1.ShowDialog();
             }
         }
-
     }
 }

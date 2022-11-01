@@ -82,20 +82,20 @@ namespace Sentidos
             dataGridViewListadosDefault.Columns.Add(columnEstadoMesas);
         }
 
-        private void btnListadoMesasReservadas_Click(object sender, EventArgs e)
-        {
-            dataGridViewListadosDefault.Columns.Clear();
-        }
+        //private void btnListadoMesasReservadas_Click(object sender, EventArgs e)
+        //{
+        //    dataGridViewListadosDefault.Columns.Clear();
+        //}
 
-        public void colorBoton()
-        {
-            Button[] arrayBoton = { btnListadoMesasReservadas , btnListadoClientes };
-            BotonColor botonColor = new BotonColor();
-            for (int i = 0; i < arrayBoton.Length; i++)
-            {
-                botonColor.colorBotonMenu(arrayBoton[i]);
-            }
+        //public void colorBoton()
+        //{
+        //    Button[] arrayBoton = { btnListadoMesasReservadas , btnListadoClientes };
+        //    BotonColor botonColor = new BotonColor();
+        //    for (int i = 0; i < arrayBoton.Length; i++)
+        //    {
+        //        botonColor.colorBotonMenu(arrayBoton[i]);
+        //    }
             
-        }
+        //}
     }
 }

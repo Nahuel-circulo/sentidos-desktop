@@ -48,16 +48,16 @@ namespace Sentidos
         }
 
 
-        public void colorBoton()
-        {
-            Button[] arrayBoton = { btnPreciosRestaurante, btnPreciosCasa_Té };
-            BotonColor botonColor = new BotonColor();
-            for (int i = 0; i < arrayBoton.Length; i++)
-            {
-                botonColor.colorBotonMenu(arrayBoton[i]);
-            }
+        //public void colorBoton()
+        //{
+        //    Button[] arrayBoton = { btnPreciosRestaurante, btnPreciosCasa_Té };
+        //    BotonColor botonColor = new BotonColor();
+        //    for (int i = 0; i < arrayBoton.Length; i++)
+        //    {
+        //        botonColor.colorBotonMenu(arrayBoton[i]);
+        //    }
 
-        }
+        //}
         private async void traerComida(char x)
         {
             LlamadaComidas listaComidas = await Conexion.TraerComidas(x);

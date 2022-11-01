@@ -19,11 +19,11 @@ namespace Sentidos
         }
 
 
-        public void colorBotonAceptar()
-        {
-            BotonColor botonColor = new BotonColor();
-            botonColor.colorBotonGeneral(btnAceptar);
-        }
+        //public void colorBotonAceptar()
+        //{
+        //    BotonColor botonColor = new BotonColor();
+        //    botonColor.colorBotonGeneral(btnAceptar);
+        //}
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
