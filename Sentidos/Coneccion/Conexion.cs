@@ -17,11 +17,15 @@ using System.Diagnostics;
 using Sentidos.Coneccion.Entidades;
 using Sentidos.Coneccion.Llamadas;
 
+using Sentidos.Coneccion.NeuvasLlamadas;
+using Sentidos.Coneccion.NuevasEntidades;
+
+
 namespace Sentidos.Coneccion
 {
     internal class Conexion
     {
-        private const string url = "https://nahuelnp.pythonanywhere.com";
+        private const string url = "https://payloadback-production.up.railway.app";
 
         private HttpClient Client;
         //JsonSerializerOptions options = new JsonSerializerOptions() { PropertyNameCaseInsensitive = true };
@@ -30,18 +34,20 @@ namespace Sentidos.Coneccion
         {
 
         }
-        public static async Task<LlamadaReservasPorFecha> TraerMesasReservadas()
+        public static async Task<LlamadaReservas> TraerMesasReservadas()
         {
             HttpClient Client = new HttpClient();
             Client.BaseAddress = new Uri(url);
-            char c = DateTime.Now.Hour > 12 ? 'm' : 't';
-            HttpResponseMessage response = await Client.GetAsync("/api/reservation/?hora=" + c + "&fecha=" + DateTime.Now.GetDateTimeFormats()[5] );
-            LlamadaReservasPorFecha reservasPorFecha = null;
+            char c = DateTime.Now.Hour > 12 ? 'M' : 'N';
+//            HttpResponseMessage response = await Client.GetAsync("/api/reservations?where[fecha][equals]=" + DateTime.Now.GetDateTimeFormats()[5] + "&where[horario][equals]="+c);
+            HttpResponseMessage response = await Client.GetAsync("/api/reservations?where[fecha][equals]=2022-11-05&where[horario][equals]=M");
+
+            LlamadaReservas reservasPorFecha = null;
             if (response.IsSuccessStatusCode)
             {
 
                 var a = response.Content.ReadAsStringAsync().Result;
-                reservasPorFecha = JsonConvert.DeserializeObject<LlamadaReservasPorFecha>(a);
+                reservasPorFecha = JsonConvert.DeserializeObject<LlamadaReservas>(a);
 
 
             }
@@ -61,27 +67,64 @@ namespace Sentidos.Coneccion
             }
             return llamadaMesas;
         }
-        
 
-        public static async Task<LlamadaComidas> TraerComidas(char x)
+        //Terminado
+        public static async Task<LlamadaComidasDos> TraerComidas(char x)
         {
-            //Debug.Write("HOLA");
+           
 
-            LlamadaComidas listaComidas= null;
+            LlamadaComidasDos listaComidas= null;
             HttpClient Client = new HttpClient();
             Client.BaseAddress = new Uri(url);
-            HttpResponseMessage response = await Client.GetAsync("api/food?category="+x);
-            
-            if (response.IsSuccessStatusCode)
-            {
-                var a = response.Content.ReadAsStringAsync().Result;
+            if (x == 't')
+            { 
+                HttpResponseMessage response = await Client.GetAsync("/api/producto?where[categoria][equals]=6362d378c20c424d4b387d8b");
+
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var a = response.Content.ReadAsStringAsync().Result;
                
-                listaComidas = JsonConvert.DeserializeObject<LlamadaComidas>(a);
+                    listaComidas = JsonConvert.DeserializeObject<LlamadaComidasDos>(a);
 
 
-            }
+                }
             
-            return listaComidas;
+                return listaComidas;
+            }
+            if (x == 'a')
+            {
+                HttpResponseMessage response = await Client.GetAsync("/api/producto/");
+
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var a = response.Content.ReadAsStringAsync().Result;
+
+                    listaComidas = JsonConvert.DeserializeObject<LlamadaComidasDos>(a);
+
+
+                }
+
+                return listaComidas;
+            }
+            if (x == 'f')
+            {
+                HttpResponseMessage response = await Client.GetAsync("/api/producto?where[categoria][equals]=6362d349c20c424d4b387d6c");
+
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var a = response.Content.ReadAsStringAsync().Result;
+
+                    listaComidas = JsonConvert.DeserializeObject<LlamadaComidasDos>(a);
+
+
+                }
+
+                return listaComidas;
+            } else return null;
+
         }
         public static void enviarRecerva(Reserva r)
         {
@@ -93,42 +136,45 @@ namespace Sentidos.Coneccion
             Debug.Write("hola");
         }
 
-        public async static Task<LlamadaUsuario> traerUsuarios()
+        public async static Task<LlamadaUsuarios> traerUsuarios()
         {
-            
-            LlamadaUsuario listaUsuarios= null;
+
+            LlamadaUsuarios listaUsuarios = null;
             HttpClient Client = new HttpClient();
             Client.BaseAddress = new Uri(url);
-            HttpResponseMessage response = await Client.GetAsync("api/users");
+            HttpResponseMessage response = await Client.GetAsync("/api/users");
             if (response.IsSuccessStatusCode)
             {
                
                 var a = response.Content.ReadAsStringAsync().Result;
 
-                listaUsuarios = JsonConvert.DeserializeObject<LlamadaUsuario>(a);
+                listaUsuarios = JsonConvert.DeserializeObject<LlamadaUsuarios>(a);
 
 
             }
             return listaUsuarios;
         }
-        public async static Task<Personal> Login(string usuario, string contraseña)
+
+        //treminados
+        public async static Task<Trabajador> Login(string usuario, string contraseña)
         {
             HttpClient Client = new HttpClient();
             Client.BaseAddress = new Uri(url);
-            HttpResponseMessage response = await Client.GetAsync("api/personal/?username="+usuario+"&password="+contraseña);
-            LlamadaLogin llamadaLogin = null;
+            HttpResponseMessage response = await Client.GetAsync("/api/personal?where[email][equals]=" + usuario + "&where[password][equals]=" + contraseña);
+            //LlamadaLogin llamadaLogin = null;
+            NeuvasLlamadas.LLamadaLogin llamadaLogin = null;
             if (response.IsSuccessStatusCode)
             {
                 var a = response.Content.ReadAsStringAsync().Result;
                 Debug.WriteLine(a);
-                llamadaLogin = JsonConvert.DeserializeObject<LlamadaLogin>(a);
+                llamadaLogin = JsonConvert.DeserializeObject<NeuvasLlamadas.LLamadaLogin>(a);
                
                
             }
-            if(llamadaLogin.Results.Count != 0)
+            if(llamadaLogin.TotalDocs != 0)
             {
                 
-                return llamadaLogin.Results[0];
+                return llamadaLogin.Docs[0];
             }
             return null;
         }

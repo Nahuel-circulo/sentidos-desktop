@@ -72,18 +72,34 @@
             // 
             this.numericUpDownNumero_mesa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDownNumero_mesa.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDownNumero_mesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.numericUpDownNumero_mesa.Location = new System.Drawing.Point(206, 53);
+            this.numericUpDownNumero_mesa.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownNumero_mesa.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDownNumero_mesa.Name = "numericUpDownNumero_mesa";
             this.numericUpDownNumero_mesa.Size = new System.Drawing.Size(164, 26);
             this.numericUpDownNumero_mesa.TabIndex = 3;
             this.numericUpDownNumero_mesa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDownNumero_mesa.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownNumero_mesa.ValueChanged += new System.EventHandler(this.numericUpDownNumero_mesa_ValueChanged);
             // 
             // labelNumero_mesa
             // 
             this.labelNumero_mesa.AutoSize = true;
             this.labelNumero_mesa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelNumero_mesa.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelNumero_mesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelNumero_mesa.Location = new System.Drawing.Point(3, 28);
             this.labelNumero_mesa.Name = "labelNumero_mesa";
             this.labelNumero_mesa.Size = new System.Drawing.Size(197, 54);
@@ -102,7 +118,7 @@
             this.btnAgregarPedido.FlatAppearance.BorderSize = 0;
             this.btnAgregarPedido.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.btnAgregarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarPedido.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAgregarPedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAgregarPedido.ForeColor = System.Drawing.Color.White;
             this.btnAgregarPedido.Location = new System.Drawing.Point(604, 31);
             this.btnAgregarPedido.Name = "btnAgregarPedido";

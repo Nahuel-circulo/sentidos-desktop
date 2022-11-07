@@ -109,6 +109,7 @@
             this.textBoxContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxContraseña.Location = new System.Drawing.Point(154, 156);
             this.textBoxContraseña.Name = "textBoxContraseña";
+            this.textBoxContraseña.PasswordChar = '*';
             this.textBoxContraseña.Size = new System.Drawing.Size(236, 24);
             this.textBoxContraseña.TabIndex = 4;
             // 

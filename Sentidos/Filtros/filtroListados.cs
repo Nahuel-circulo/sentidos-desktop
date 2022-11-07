@@ -1,9 +1,12 @@
 ﻿using Sentidos.Coneccion;
+using Sentidos.Coneccion.Entidades;
 using Sentidos.Coneccion.Llamadas;
+using Sentidos.Coneccion.NeuvasLlamadas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -24,34 +27,27 @@ namespace Sentidos
         {
             dataGridViewListadosDefault.Columns.Clear();
             crearColumnasDataGridClientes();
-            LlamadaUsuario usuario = await Conexion.traerUsuarios();
-            foreach (var item in usuario.Results)
+            LlamadaUsuarios usuario = await Conexion.traerUsuarios();
+            foreach (var item in usuario.Docs)
             {
-                dataGridViewListadosDefault.Rows.Add(item.Name);
+                dataGridViewListadosDefault.Rows.Add(item.Email);
             }
         }
         private async void btnListadoMesasReservadas_Click(object sender, EventArgs e)
         {
             dataGridViewListadosDefault.Columns.Clear();
             crearColumnasDataGridMesas();
-            LlamadaReservasPorFecha llamadaReservasPorFecha = await Conexion.TraerMesasReservadas();
-            LlamadaMesas llamadaMesas = await Conexion.TraerMesas();
-            foreach(var item in llamadaMesas.Results)
+            LlamadaReservas llamadaReservas = await Conexion.TraerMesasReservadas();           
+            if(llamadaReservas.Docs.Count != 0)
             {
-                bool flag=false;
-                foreach(var item2 in llamadaReservasPorFecha.Results)
+                foreach (var item in llamadaReservas.Docs)
                 {
-                    if(item.Id == item2.NroMesa)
-                    {
-                        flag = true;
-                    }
+                    Debug.WriteLine(item.Mesa.Nro_Mesa);
+                    dataGridViewListadosDefault.Rows.Add(item.User.Name, item.Mesa.Nro_Mesa);
+                 
                 }
-                if (flag) dataGridViewListadosDefault.Rows.Add(item.Id, "reservado");
-                else dataGridViewListadosDefault.Rows.Add(item.Id, "disponible");
-
-
-
             }
+           
         }
 
         private void crearColumnasDataGridClientes()
@@ -72,13 +68,13 @@ namespace Sentidos
             //columna numero de mesa
             DataGridViewTextBoxColumn columnNombreMesas = new DataGridViewTextBoxColumn();
             columnNombreMesas.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            columnNombreMesas.HeaderText = "Número de mesa";
+            columnNombreMesas.HeaderText = "Usuario";
             dataGridViewListadosDefault.Columns.Add(columnNombreMesas);
 
             //columna estado de mesa
             DataGridViewTextBoxColumn columnEstadoMesas = new DataGridViewTextBoxColumn();
             columnEstadoMesas.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            columnEstadoMesas.HeaderText = "Estado";
+            columnEstadoMesas.HeaderText = "Mesa";
             dataGridViewListadosDefault.Columns.Add(columnEstadoMesas);
         }
 

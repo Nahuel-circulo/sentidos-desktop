@@ -7,7 +7,7 @@ using Sentidos.Coneccion.Entidades;
 
 namespace Sentidos.Coneccion.Llamadas
 {
-    internal class LlamadaUsuario
+    internal class LlamadaUsuarioOLD
     {
         public long Count { get; set; }
         public object Next { get; set; }

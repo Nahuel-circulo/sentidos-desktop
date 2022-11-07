@@ -31,5 +31,10 @@ namespace Sentidos
             FiltroAgregarPedido filtroAgregarPedido = new FiltroAgregarPedido();
             traerFiltros(filtroAgregarPedido);
         }
+
+        private void numericUpDownNumero_mesa_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

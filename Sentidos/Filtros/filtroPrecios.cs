@@ -1,5 +1,5 @@
 ﻿using Sentidos.Coneccion;
-using Sentidos.Coneccion.Llamadas;
+using Sentidos.Coneccion.NeuvasLlamadas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -60,8 +60,8 @@ namespace Sentidos
         //}
         private async void traerComida(char x)
         {
-            LlamadaComidas listaComidas = await Conexion.TraerComidas(x);
-            foreach (var item in listaComidas.Results)
+            LlamadaComidasDos listaComidas = await Conexion.TraerComidas(x);
+            foreach (var item in listaComidas.Docs)
             {
 
                 dataGridViewPrecios.Rows.Add(item.Name,item.Description,item.Price);

@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualBasic.Logging;
 using Sentidos.Coneccion;
 using Sentidos.Coneccion.Entidades;
+using Sentidos.Coneccion.NuevasEntidades;
 using Sentidos.Formularios;
 using System;
 using System.Collections.Generic;
@@ -17,14 +18,14 @@ namespace Sentidos
 {
     public partial class LogIn : Form
     {
-        private Personal personal;
+        private Trabajador personal;
         
         public LogIn()
         {
             InitializeComponent();
         }
 
-        internal Personal Personal { get => personal; }
+        internal Trabajador Personal { get => personal; }
 
      
         

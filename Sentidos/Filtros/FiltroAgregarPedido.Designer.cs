@@ -58,7 +58,7 @@
             this.tableLayoutPanelAgregarQuitar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.027933F));
             this.tableLayoutPanelAgregarQuitar.Controls.Add(this.btnAgregar, 0, 1);
             this.tableLayoutPanelAgregarQuitar.Controls.Add(this.btnQuitar, 0, 3);
-            this.tableLayoutPanelAgregarQuitar.Location = new System.Drawing.Point(381, 16);
+            this.tableLayoutPanelAgregarQuitar.Location = new System.Drawing.Point(381, 3);
             this.tableLayoutPanelAgregarQuitar.Name = "tableLayoutPanelAgregarQuitar";
             this.tableLayoutPanelAgregarQuitar.RowCount = 5;
             this.tableLayoutPanelAgregarQuitar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.4F));
@@ -81,7 +81,7 @@
             this.btnAgregar.FlatAppearance.BorderSize = 0;
             this.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(122)))), ((int)(((byte)(127)))));
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
             this.btnAgregar.Location = new System.Drawing.Point(3, 71);
             this.btnAgregar.Name = "btnAgregar";
@@ -102,7 +102,7 @@
             this.btnQuitar.FlatAppearance.BorderSize = 0;
             this.btnQuitar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(122)))), ((int)(((byte)(127)))));
             this.btnQuitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQuitar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnQuitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnQuitar.ForeColor = System.Drawing.Color.White;
             this.btnQuitar.Location = new System.Drawing.Point(3, 176);
             this.btnQuitar.Name = "btnQuitar";
@@ -133,7 +133,7 @@
             this.tableLayoutPanelListaComida.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 93.16239F));
             this.tableLayoutPanelListaComida.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanelListaComida.Controls.Add(this.dataGridViewListaComida, 1, 1);
-            this.tableLayoutPanelListaComida.Location = new System.Drawing.Point(0, 16);
+            this.tableLayoutPanelListaComida.Location = new System.Drawing.Point(1, 3);
             this.tableLayoutPanelListaComida.Name = "tableLayoutPanelListaComida";
             this.tableLayoutPanelListaComida.RowCount = 2;
             this.tableLayoutPanelListaComida.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.863192F));
@@ -143,14 +143,14 @@
             // 
             // dataGridViewListaComida
             // 
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.dataGridViewListaComida.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewListaComida.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewListaComida.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -160,7 +160,7 @@
             this.dataGridViewListaComida.Cursor = System.Windows.Forms.Cursors.Hand;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
@@ -172,13 +172,13 @@
             this.dataGridViewListaComida.Name = "dataGridViewListaComida";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewListaComida.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
             this.dataGridViewListaComida.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewListaComida.RowTemplate.Height = 25;
@@ -192,7 +192,7 @@
             this.tableLayoutPanelListaPedido.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94.3662F));
             this.tableLayoutPanelListaPedido.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanelListaPedido.Controls.Add(this.dataGridViewListaPedido, 1, 1);
-            this.tableLayoutPanelListaPedido.Location = new System.Drawing.Point(553, 16);
+            this.tableLayoutPanelListaPedido.Location = new System.Drawing.Point(553, 4);
             this.tableLayoutPanelListaPedido.Name = "tableLayoutPanelListaPedido";
             this.tableLayoutPanelListaPedido.RowCount = 2;
             this.tableLayoutPanelListaPedido.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.537459F));
@@ -229,7 +229,7 @@
             this.tableLayoutPanelEliminarRealizar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 275F));
             this.tableLayoutPanelEliminarRealizar.Controls.Add(this.btnEliminar, 1, 1);
             this.tableLayoutPanelEliminarRealizar.Controls.Add(this.btnRealizarPedido, 3, 1);
-            this.tableLayoutPanelEliminarRealizar.Location = new System.Drawing.Point(0, 326);
+            this.tableLayoutPanelEliminarRealizar.Location = new System.Drawing.Point(0, 317);
             this.tableLayoutPanelEliminarRealizar.Name = "tableLayoutPanelEliminarRealizar";
             this.tableLayoutPanelEliminarRealizar.RowCount = 3;
             this.tableLayoutPanelEliminarRealizar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.3913F));
@@ -249,7 +249,7 @@
             this.btnEliminar.FlatAppearance.BorderSize = 0;
             this.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.Location = new System.Drawing.Point(266, 15);
             this.btnEliminar.Name = "btnEliminar";
@@ -270,7 +270,7 @@
             this.btnRealizarPedido.FlatAppearance.BorderSize = 0;
             this.btnRealizarPedido.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(34)))), ((int)(((byte)(35)))));
             this.btnRealizarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRealizarPedido.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRealizarPedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnRealizarPedido.ForeColor = System.Drawing.Color.White;
             this.btnRealizarPedido.Location = new System.Drawing.Point(519, 15);
             this.btnRealizarPedido.Name = "btnRealizarPedido";
